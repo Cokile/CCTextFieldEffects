@@ -7,14 +7,14 @@ Custom UITextFields effects inspired by [Codrops](http://tympanus.net/Developmen
 
 It now support
 
-- [x] Akira
-- [x] Hoshi
-- [x] Isao
-- [x] Jiro
-- [x] Kaede
-- [x] Madoka
-- [x] Yoko
-- [x] Yoshiko
+- [x] [Akira](https://github.com/Cokile/CCTextFieldEffects#akira)
+- [x] [Hoshi](https://github.com/Cokile/CCTextFieldEffects#hoshi)
+- [x] [Isao](https://github.com/Cokile/CCTextFieldEffects#isao)
+- [x] [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro)
+- [x] [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede)
+- [x] [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka)
+- [x] [Yoko](https://github.com/Cokile/CCTextFieldEffects#yoko)
+- [x] [Yoshiko](https://github.com/Cokile/CCTextFieldEffects#yoshiko)
 
 
 
