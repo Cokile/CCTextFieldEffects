@@ -1,41 +1,46 @@
 [
  {
-   "backgroundColor": [47, 50, 56],
-   "title":"Akira",
+    "backgroundColor": [47, 50, 56],
+    "title":"Akira",
  },
  
  {
-   "backgroundColor": [249, 247, 246],
-   "title":"Hoshi",
+    "backgroundColor": [249, 247, 246],
+    "title":"Hoshi",
  },
  
  {
-   "backgroundColor": [61, 68, 68],
-   "title":"Isao",
+    "backgroundColor": [61, 68, 68],
+    "title":"Isao",
  },
  
  {
- "backgroundColor": [208, 214, 214],
- "title":"Jiro",
+    "backgroundColor": [208, 214, 214],
+    "title":"Jiro",
  },
  
  {
- "backgroundColor": [249, 247, 246],
- "title":"Kaede",
+    "backgroundColor": [249, 247, 246],
+    "title":"Kaede",
  },
  
  {
- "backgroundColor": [47, 50, 56],
- "title":"Madoka",
+    "backgroundColor": [47, 50, 56],
+    "title":"Madoka",
  },
  
  {
- "backgroundColor": [223, 102, 89],
- "title":"Yoko"
+    "backgroundColor": [223, 102, 89],
+    "title":"Yoko",
  },
  
  {
- "backgroundColor": [249, 247, 246],
- "title":"Yoshiko"
- }
+    "backgroundColor": [249, 247, 246],
+    "title":"Yoshiko",
+ },
+ 
+ {
+    "backgroundColor": [249, 247, 246],
+    "title":"Hideo",
+ },
 ]

@@ -15,6 +15,7 @@ It now support
 - [x] [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka)
 - [x] [Yoko](https://github.com/Cokile/CCTextFieldEffects#yoko)
 - [x] [Yoshiko](https://github.com/Cokile/CCTextFieldEffects#yoshiko)
+- [x] [Hideo](https://github.com/Cokile/CCTextFieldEffects#Hideo)
 
 
 
@@ -36,7 +37,10 @@ Drag all the files in the  `CCTextFieldEffects` folder into your project.
 
 ## Easy to use
 
+__Note:__ If you run the demo app in the simulator, the animation will get blocked. You should run it in the real iOS device for better test.
+
 ### Akira
+
 ![Akira](Captures/Akira.gif)
 
 ```objective-c
@@ -413,7 +417,49 @@ self.yoshikoTextField.animationCompletionHandler = ^(CCAnimationType type){
 
 
 
-__Note:__ If you run the demo app in the simulator, the animation will get blocked. You should run it in the real iOS device for better usage.
+### Hideo
+
+![Hideo](Captures/Hideo.gif)
+
+```objective-c
+#import "CCTextFieldEffects.h"
+
+//...
+@property (strong, nonatomic) HideoTextField *hideoTextField;
+
+//...
+self.hideoTextField = [[HideoTextField alloc] initWithFrame:<#CGRect#>];
+
+// The size of the image relative to the original size when animated, default value is 0.7
+self.hideoTextField.imageScale = <#CGFloat#>;
+
+// The color of the left container, default value is R137 G157 B218 
+self.hideoTextField.imageContainerColor = <#UIColor#>;
+
+// The image of the left container.
+self.hideoTextField.image = <#UIImage#>;
+
+// The color of the cursor, default value is R170 G170 B170
+self.hideoTextField.cursorColor = <#UIColor#>;
+
+// The color of the text, default value is R170 G170 B170
+self.hideoTextField.textColor = <#UIColor#>;
+
+// The block excuted when the animation has completed.
+self.hideoTextField.animationCompletionHandler = ^(CCAnimationType type){
+	if (type == CCAnimationTypeTextEntry) {
+  		// The code excuted when the animation has obtained focus has completed.
+      	// ...
+	}
+  
+  	if (type == CCAnimationTypeTextEntry) {
+  		// The code excuted when the animation for losed focus has completed.
+      	// ...
+	}
+};
+
+[self.view addSubview:self.hideoTextField];
+```
 
 
 

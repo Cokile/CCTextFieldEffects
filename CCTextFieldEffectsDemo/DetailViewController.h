@@ -7,15 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CCTextFieldEffects.h"
 
 @interface DetailViewController : UIViewController
 
 @property (nonatomic) CGFloat red;
 @property (nonatomic) CGFloat green;
 @property (nonatomic) CGFloat blue;
-
-@property (strong, nonatomic) CCTextField *tf1;
-@property (strong, nonatomic) CCTextField *tf2;
 
 @end
