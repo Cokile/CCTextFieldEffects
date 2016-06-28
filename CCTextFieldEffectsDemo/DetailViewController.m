@@ -128,6 +128,14 @@
         MinoruTextField *tf2 = [[MinoruTextField alloc] initWithFrame:self.lowFrame];
         tf2.placeholder = @"Last Name";
         [self.view addSubview:tf2];
+    } else if ([self.title isEqualToString:@"Kyo"]) {
+        KyoTextField *tf1 = [[KyoTextField alloc] initWithFrame:self.highFrame];
+        tf1.placeholder = @"First Name";
+        [self.view addSubview:tf1];
+        
+        KyoTextField *tf2 = [[KyoTextField alloc] initWithFrame:self.lowFrame];
+        tf2.placeholder = @"Last Name";
+        [self.view addSubview:tf2];
     }
 }
 

@@ -12,7 +12,7 @@ It now supports
 | [Akira](https://github.com/Cokile/CCTextFieldEffects#akira) | [Hideo](https://github.com/Cokile/CCTextFieldEffects#hideo) |
 | [Hoshi](https://github.com/Cokile/CCTextFieldEffects#hoshi) | [Haruki](https://github.com/Cokile/CCTextFieldEffects#haruki) |
 | [Isao](https://github.com/Cokile/CCTextFieldEffects#isao) | [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) - bug fixed |
-| [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro) |                                          |
+| [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro) | [Kyo](https://github.com/Cokile/CCTextFieldEffects#kyo) |
 | [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede) |                                          |
 | [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka) |                                          |
 | [Yoko](https://github.com/Cokile/CCTextFieldEffects#yoko) |                                          |
@@ -37,7 +37,12 @@ Drag all the files in the  `CCTextFieldEffects` folder into your project.
 
 ## Easy to use
 
-__Note:__ If you run the demo app in the simulator, the animation will get blocked. You should run it in the real iOS device for better test.
+__Note:__ 
+
+- If you run the demo app in the simulator, the animation will get blocked. You should run it in the real iOS device for better test.
+
+
+- All the text fields are resigned from first responder by pressing the Return button in the keyboard.
 
 ### Akira
 
@@ -51,6 +56,8 @@ __Note:__ If you run the demo app in the simulator, the animation will get block
 
 //...
 self.akiraTextField = [[AkiraTextField alloc] initWithFrame:<#CGRect#>];
+
+self.akiraTextField.placeholder = <#NSString#>;
 
 // The size of the placeholder label relative to the font size of the text field, default value is 0.7
 self.akiraTextField.placeholderFontScale = <#CGFloat#>;
@@ -96,6 +103,8 @@ self.akiraTextField.didEndEditingHandler = ^{
 
 //...
 self.hoshiTextField = [[HoshiTextField alloc] initWithFrame:<#CGRect#>];
+
+self.hoshiTextField.placeholder = <#NSString#>;
 
 // The size of the placeholder label relative to the font size of the text field, default value is 0.65
 self.hoshiTextField.placeholderFontScale = <#CGFloat#>;
@@ -144,6 +153,8 @@ self.hoshiTextField.didEndEditingHandler = ^{
 //...
 self.isaoTextField = [[IsaoTextField alloc] initWithFrame:<#CGRect#>];
 
+self.isaoTextField.placeholder = <#NSString#>;
+
 // The size of the placeholder label relative to the font size of the text field, default value is 0.7
 self.isaoTextField.placeholderFontScale = <#CGFloat#>;
 
@@ -189,6 +200,8 @@ self.isaoTextField.didEndEditingHandler = ^{
 //...
 self.jiroTextField = [[JiroTextField alloc] initWithFrame:<#CGRect#>];
 
+self.jiroTextField.placeholder = <#NSString#>;
+
 // The size of the placeholder label relative to the font size of the text field, default value is 0.65
 self.jiroTextField.placeholderFontScale = <#CGFloat#>;
 
@@ -233,6 +246,8 @@ self.jiroTextField.didEndEditingHandler = ^{
 
 //...
 self.kaedeTextField = [[kaedeTextField alloc] initWithFrame:<#CGRect#>];
+
+self.kaedeTextField.placeholder = <#NSString#>;
 
 // The size of the placeholder label relative to the font size of the text field, default value is 0.8
 self.kaedeTextField.placeholderFontScale = <#CGFloat#>;
@@ -282,6 +297,8 @@ self.kaedeTextField.didEndEditingHandler = ^{
 //...
 self.madokaTextField = [[MadokaTextField alloc] initWithFrame:<#CGRect#>];
 
+self.madokaTextField.placeholder = <#NSString#>;
+
 // The size of the placeholder label relative to the font size of the text field, default value is 0.65
 self.madokaTextField.placeholderFontScale = <#CGFloat#>;
 
@@ -327,6 +344,8 @@ self.madokaTextField.didEndEditingHandler = ^{
 //...
 self.yokoTextField = [[YokoTextField alloc] initWithFrame:<#CGRect#>];
 
+self.yokoTextField.placeholder = <#NSString#>;
+
 // The size of the placeholder label relative to the font size of the text field, default value is 0.7
 self.yokoTextField.placeholderFontScale = <#CGFloat#>;
 
@@ -371,6 +390,8 @@ self.yokoTextField.didEndEditingHandler = ^{
 
 //...
 self.yoshikoTextField = [[YoshikoTextField alloc] initWithFrame:<#CGRect#>];
+
+self.yoshikoTextField.placeholder = <#NSString#>;
 
 // The size of the placeholder label relative to the font size of the text field, default value is 0.7
 self.yoshikoTextField.placeholderFontScale = <#CGFloat#>;
@@ -424,6 +445,8 @@ self.yoshikoTextField.didEndEditingHandler = ^{
 //...
 self.hideoTextField = [[HideoTextField alloc] initWithFrame:<#CGRect#>];
 
+self.hideoTextField.placeholder = <#NSString#>;
+
 // The size of the image relative to the original size when animated, default value is 0.7
 self.hideoTextField.imageScale = <#CGFloat#>;
 
@@ -472,6 +495,8 @@ self.hideoTextField.didEndEditingHandler = ^{
 //...
 self.harukiTextField = [[HarukiTextField alloc] initWithFrame:<#CGRect#>];
 
+self.harukiTextField.placeholder = <#NSString#>;
+
 // The size of the placeholder label relative to the font size of the text field, default value is 0.75
 self.harukiTextField.placeholderFontScale = <#CGFloat#>;
 
@@ -517,6 +542,8 @@ self.harukiTextField.didEndEditingHandler = ^{
 //...
 self.minoruTextField = [[MinoruTextField alloc] initWithFrame:<#CGRect#>];
 
+self.minoruTextField.placeholder = <#NSString#>;
+
 // The size of the placeholder label relative to the font size of the text field, default value is 0.65
 self.minoruTextField.placeholderFontScale = <#CGFloat#>;
 
@@ -552,6 +579,58 @@ self.minoruTextField.didEndEditingHandler = ^{
 
 
 
+### Kyo
+
+![Kyo](Captures/Kyo.gif)
+
+Note: To dismiss the keyboard, just by press the Return button in the keyboard.
+
+```objective-c
+#import "CCTextFieldEffects.h"
+
+//...
+@property (strong, nonatomic) KyoTextField *kyoTextField;
+
+//...
+self.kyoTextField = [[KyoTextField alloc] initWithFrame:<#CGRect#>];
+
+self.kyoTextField.placeholder = <#NSString#>;
+
+// The size of the placeholder label relative to the font size of the text field, default value is 0.85
+self.kyoTextField.placeholderFontScale = <#CGFloat#>;
+
+// The color of the placeholder, default value is R106 G121 B137
+self.kyoTextField.placeholderColor = <#UIColor#>;
+
+// The color of background of text area. default value is R255 G255 B255
+self.kyoTextField.backgroundColor = <#UIColor#>;
+
+// The color of the overlay, default value is R61 G88 B210 Alpha 0.6
+self.kyoTextField.overlayColor = <#UIColor#>;
+
+// The color of the cursor, default value is R83 G93 B146
+self.kyoTextField.cursorColor = <#UIColor#>;
+
+// The color of the text, default value is R83 G93 B146
+self.kyoTextField.textColor = <#UIColor#>;
+
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.kyoTextField.didBeginEditingHandler = ^{
+    // ...
+};
+
+// The block excuted when the animation for losing focus has completed.
+self.kyoTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
+
+[self.view addSubview:self.kyoTextField];
+```
+
+
+
 ## TODO
 
 - More types of effects.
@@ -562,8 +641,8 @@ self.minoruTextField.didEndEditingHandler = ^{
 
 ## Acknowledgement
 
-- Thanks to original  effects' developer Raul Riera, [@raulriera](http://twitter.com/raulriera)
+- Thanks to original  effects' developer Raul Riera, [@raulriera](http://twitter.com/raulriera
 
-​	[https://github.com/raulriera/TextFieldEffects](https://github.com/raulriera/TextFieldEffects)
+  [https://github.com/raulriera/TextFieldEffects](https://github.com/raulriera/TextFieldEffects)
 
 - The effect of [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) is created by [PlusingHalo](https://github.com/shu223/PulsingHalo).

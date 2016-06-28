@@ -38,4 +38,11 @@
     // Don't draw any placeholders.
 }
 
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self resignFirstResponder];
+    
+    return NO;
+}
+
 @end

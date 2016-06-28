@@ -23,6 +23,7 @@
 		B6935F4D1D21FD3400A6FD16 /* HarukiTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6935F4C1D21FD3400A6FD16 /* HarukiTextField.m */; };
 		B6935F511D2229C800A6FD16 /* MinoruTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6935F501D2229C800A6FD16 /* MinoruTextField.m */; };
 		B6935F541D22579B00A6FD16 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B6935F531D22579B00A6FD16 /* PulsingHaloLayer.m */; };
+		B6935F581D226B1600A6FD16 /* KyoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6935F571D226B1600A6FD16 /* KyoTextField.m */; };
 		B6B940A81D1E7AAC000C66BC /* IsaoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B940A71D1E7AAC000C66BC /* IsaoTextField.m */; };
 		B6B940AF1D1EB1A6000C66BC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B940AE1D1EB1A6000C66BC /* DetailViewController.m */; };
 		B6B940B11D1EB23C000C66BC /* effects.json in Resources */ = {isa = PBXBuildFile; fileRef = B6B940B01D1EB23C000C66BC /* effects.json */; };
@@ -84,6 +85,8 @@
 		B6935F501D2229C800A6FD16 /* MinoruTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinoruTextField.m; sourceTree = "<group>"; };
 		B6935F521D22579B00A6FD16 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
 		B6935F531D22579B00A6FD16 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
+		B6935F561D226B1600A6FD16 /* KyoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KyoTextField.h; sourceTree = "<group>"; };
+		B6935F571D226B1600A6FD16 /* KyoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KyoTextField.m; sourceTree = "<group>"; };
 		B6B940A61D1E7AAC000C66BC /* IsaoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsaoTextField.h; sourceTree = "<group>"; };
 		B6B940A71D1E7AAC000C66BC /* IsaoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsaoTextField.m; sourceTree = "<group>"; };
 		B6B940AC1D1E7B48000C66BC /* CCTextFieldEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTextFieldEffects.h; sourceTree = "<group>"; };
@@ -222,6 +225,7 @@
 				B644A2E71D20F9BB00A887D2 /* Hideo */,
 				B6935F4A1D21FD0100A6FD16 /* Haruki */,
 				B6935F4E1D22299D00A6FD16 /* Minoru */,
+				B6935F551D226AF400A6FD16 /* Kyo */,
 			);
 			path = CCTextFieldEffects;
 			sourceTree = "<group>";
@@ -273,6 +277,15 @@
 				B6935F531D22579B00A6FD16 /* PulsingHaloLayer.m */,
 			);
 			name = Minoru;
+			sourceTree = "<group>";
+		};
+		B6935F551D226AF400A6FD16 /* Kyo */ = {
+			isa = PBXGroup;
+			children = (
+				B6935F561D226B1600A6FD16 /* KyoTextField.h */,
+				B6935F571D226B1600A6FD16 /* KyoTextField.m */,
+			);
+			name = Kyo;
 			sourceTree = "<group>";
 		};
 		B6B940A91D1E7AC2000C66BC /* Akira */ = {
@@ -451,6 +464,7 @@
 				B6935F541D22579B00A6FD16 /* PulsingHaloLayer.m in Sources */,
 				B64D561E1D1DF4C700A9F7BE /* AppDelegate.m in Sources */,
 				B6B940A81D1E7AAC000C66BC /* IsaoTextField.m in Sources */,
+				B6935F581D226B1600A6FD16 /* KyoTextField.m in Sources */,
 				B61010941D1FC9B9002F562C /* YokoTextField.m in Sources */,
 				B61010901D1FB485002F562C /* MadokaTextField.m in Sources */,
 				B6D308361D1DFB9100C993C3 /* CCTextField.m in Sources */,
