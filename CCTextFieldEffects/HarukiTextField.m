@@ -123,7 +123,7 @@ static CGPoint const placeHolderInsets = {8, 0};
         self.cursorColor = [UIColor clearColor];
         
         [UIView animateWithDuration:0.35 animations:^{
-            self.upperLayer.frame = CGRectMake(0, self.placeholderHeight, CGRectGetWidth(self.bounds), borderSize);
+            self.upperLayer.frame = CGRectMake(0, self.placeholderHeight*1.1, CGRectGetWidth(self.bounds), borderSize);
             self.lowerLayer.frame = CGRectMake(0, CGRectGetHeight(self.bounds)-borderSize, CGRectGetWidth(self.bounds), borderSize);
             self.placeholderLabel.frame = [self placeholderRectForBounds:self.bounds];
         } completion:^(BOOL finished) {

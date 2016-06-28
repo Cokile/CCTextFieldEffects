@@ -11,7 +11,7 @@ It now supports
 | :--------------------------------------: | :--------------------------------------: |
 | [Akira](https://github.com/Cokile/CCTextFieldEffects#akira) | [Hideo](https://github.com/Cokile/CCTextFieldEffects#hideo) |
 | [Hoshi](https://github.com/Cokile/CCTextFieldEffects#hoshi) | [Haruki](https://github.com/Cokile/CCTextFieldEffects#haruki) |
-| [Isao](https://github.com/Cokile/CCTextFieldEffects#isao) |                                          |
+| [Isao](https://github.com/Cokile/CCTextFieldEffects#isao) | [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) - bug fixed |
 | [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro) |                                          |
 | [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede) |                                          |
 | [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka) |                                          |
@@ -240,6 +240,9 @@ self.kaedeTextField.placeholderFontScale = <#CGFloat#>;
 // The color of the foreground, default value is R239 G238 B238
 self.kaedeTextField.foregroundColor = <#UIColor#>;
 
+// The color of background of text area. default value is R255 G255 B255
+self.kaedeTextField.backgroundColor = <#UIColor#>;
+
 // The color of the placeholder, default value is R106 G121 B137
 self.kaedeTextField.placeholderColor = <#UIColor#>;
 
@@ -430,6 +433,9 @@ self.hideoTextField.imageContainerColor = <#UIColor#>;
 // The image of the left container.
 self.hideoTextField.image = <#UIImage#>;
 
+// The color of background of text area. default value is R255 G255 B255
+self.hideoTextField.backgroundColor = <#UIColor#>;
+
 // The color of the cursor, default value is R170 G170 B170
 self.hideoTextField.cursorColor = <#UIColor#>;
 
@@ -498,6 +504,54 @@ self.harukiTextField.didEndEditingHandler = ^{
 
 
 
+### Minoru
+
+![Minoru](Captures/Minoru.gif)
+
+```objective-c
+#import "CCTextFieldEffects.h"
+
+//...
+@property (strong, nonatomic) MinoruTextField *minoruTextField;
+
+//...
+self.minoruTextField = [[MinoruTextField alloc] initWithFrame:<#CGRect#>];
+
+// The size of the placeholder label relative to the font size of the text field, default value is 0.65
+self.minoruTextField.placeholderFontScale = <#CGFloat#>;
+
+// The color of the border, default value is R236 G162 B155 
+self.minoruTextField.borderColor = <#UIColor#>;
+
+// The color of the placeholder, default value is R236 G162 B155
+self.minoruTextField.placeholderColor = <#UIColor#>;
+
+// The color of background of text area. default value is R255 G255 B255
+self.minoruTextField.backgroundColor = <#UIColor#>;
+
+// The color of the cursor, default value is R236 G162 B155
+self.minoruTextField.cursorColor = <#UIColor#>;
+
+// The color of the text, default value is R236 G162 B155
+self.minoruTextField.textColor = <#UIColor#>;
+
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.minoruTextField.didBeginEditingHandler = ^{
+    // ...
+};
+
+// The block excuted when the animation for losing focus has completed.
+self.minoruTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
+
+[self.view addSubview:self.minoruTextField];
+```
+
+
+
 ## TODO
 
 - More types of effects.
@@ -508,7 +562,8 @@ self.harukiTextField.didEndEditingHandler = ^{
 
 ## Acknowledgement
 
-Thanks to original  effects' developer Raul Riera, [@raulriera](http://twitter.com/raulriera)
+- Thanks to original  effects' developer Raul Riera, [@raulriera](http://twitter.com/raulriera)
 
-[https://github.com/raulriera/TextFieldEffects](https://github.com/raulriera/TextFieldEffects)
+​	[https://github.com/raulriera/TextFieldEffects](https://github.com/raulriera/TextFieldEffects)
 
+- The effect of [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) is created by [PlusingHalo](https://github.com/shu223/PulsingHalo).

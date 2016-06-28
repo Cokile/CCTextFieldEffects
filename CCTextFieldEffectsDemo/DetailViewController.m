@@ -120,6 +120,14 @@
         HarukiTextField *tf2 = [[HarukiTextField alloc] initWithFrame:self.lowFrame];
         tf2.placeholder = @"Last Name";
         [self.view addSubview:tf2];
+    } else if ([self.title isEqualToString:@"Minoru"]) {
+        MinoruTextField *tf1 = [[MinoruTextField alloc] initWithFrame:self.highFrame];
+        tf1.placeholder = @"First Name";
+        [self.view addSubview:tf1];
+        
+        MinoruTextField *tf2 = [[MinoruTextField alloc] initWithFrame:self.lowFrame];
+        tf2.placeholder = @"Last Name";
+        [self.view addSubview:tf2];
     }
 }
 
