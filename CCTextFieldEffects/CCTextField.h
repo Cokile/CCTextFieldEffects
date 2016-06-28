@@ -9,25 +9,11 @@
 #import <UIKit/UIKit.h>
 
 /**
- *  The type of animatino a TextFieldEffect can perform.
- */
-typedef NS_ENUM(NSInteger, CCAnimationType) {
-    /**
-     *  Animation that takes effect when the textfield has focus.
-     */
-    CCAnimationTypeTextEntry,
-    /**
-     *  Animation that takes effect when the textfield loses focus.
-     */
-    CCAnimationTypeTextDisplay
-};
-
-/**
  *  Closure executed when an animation has been completed
  *
  *  @param type The type of animatino a TextFieldEffect can perform.
  */
-typedef void(^AnimationCompletionHandler)(CCAnimationType type);
+typedef void(^AnimationCompletionHandler)(void);
 
 @interface CCTextField : UITextField <UITextFieldDelegate>
 
@@ -43,9 +29,14 @@ typedef void(^AnimationCompletionHandler)(CCAnimationType type);
 @property (strong, nonatomic) UILabel *placeholderLabel;
 
 /**
- *  Block executed when the animation for having focus has been completed.
+ *  Block executed when the animation for obtaining focus has been completed.
  */
-@property (copy, nonatomic) AnimationCompletionHandler animationCompletionHandler;
+@property (copy, nonatomic) AnimationCompletionHandler didBeginEditingHandler;
+
+/**
+ *  Block executed when the animation for losing focus has been completed.
+ */
+@property (copy, nonatomic) AnimationCompletionHandler didEndEditingHandler;
 
 #pragma mark - Public methods
 - (void)updateViewsForBoundsChange:(CGRect)bounds;

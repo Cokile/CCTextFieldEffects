@@ -123,8 +123,8 @@ static CGPoint const placeholderInsets = {0, 6};
             self.placeholderLabel.frame = CGRectMake(10, self.placeholderLabel.frame.origin.y, CGRectGetWidth(self.placeholderLabel.frame), CGRectGetHeight(self.placeholderLabel.frame));
             self.placeholderLabel.alpha = 0;
         } completion:^(BOOL finished) {
-            if (self.animationCompletionHandler != nil) {
-                self.animationCompletionHandler(CCAnimationTypeTextEntry);
+            if (self.didBeginEditingHandler != nil) {
+                self.didBeginEditingHandler();
             }
         }];
     }
@@ -145,8 +145,8 @@ static CGPoint const placeholderInsets = {0, 6};
             [self layoutPlaceholderInTextRect];
             self.placeholderLabel.alpha = 1.0;
         } completion:^(BOOL finished) {
-            if (self.animationCompletionHandler != nil) {
-                self.animationCompletionHandler(CCAnimationTypeTextDisplay);
+            if (self.didEndEditingHandler != nil) {
+                self.didEndEditingHandler();
             }
         }];
         

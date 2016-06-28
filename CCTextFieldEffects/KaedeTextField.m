@@ -64,6 +64,7 @@ static CGPoint const placeholderInsets = {10, 5};
         self.foregroundColor = [UIColor colorWithRed:0.9373 green:0.9333 blue:0.9333 alpha:1.0];
         self.cursorColor = [UIColor colorWithRed:0.6157 green:0.6706 blue:0.7294 alpha:1.0];
         self.textColor = self.cursorColor;
+        self.backgroundColor = [UIColor whiteColor];
         
         self.placeholderFontScale = 0.8;
         
@@ -123,8 +124,8 @@ static CGPoint const placeholderInsets = {10, 5};
     [UIView animateWithDuration:0.22 animations:^{
         self.foregroundView.frame = CGRectMake(CGRectGetWidth(self.frame)*0.6, 0, CGRectGetWidth(self.foregroundView.frame), CGRectGetHeight(self.foregroundView.frame));
     } completion:^(BOOL finished) {
-        if (self.animationCompletionHandler != nil) {
-            self.animationCompletionHandler(CCAnimationTypeTextEntry);
+        if (self.didBeginEditingHandler != nil) {
+            self.didBeginEditingHandler();
         }
     }];
 }
@@ -138,8 +139,8 @@ static CGPoint const placeholderInsets = {10, 5};
         [UIView animateWithDuration:0.3 animations:^{
              self.foregroundView.frame = CGRectMake(0, 0, CGRectGetWidth(self.foregroundView.frame), CGRectGetHeight(self.foregroundView.frame));
         } completion:^(BOOL finished) {
-            if (self.animationCompletionHandler != nil) {
-                self.animationCompletionHandler(CCAnimationTypeTextDisplay);
+            if (self.didEndEditingHandler != nil) {
+                self.didEndEditingHandler();
             }
         }];
     }

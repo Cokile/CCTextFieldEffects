@@ -161,8 +161,10 @@ static CGPoint const placeholderInsets = {6, 0};
             [self updateBorder];
             [self updateBackground];
         } completion:^(BOOL finished) {
-            if (self.animationCompletionHandler != nil) {
-                self.animationCompletionHandler([self isFirstResponder]?CCAnimationTypeTextEntry:CCAnimationTypeTextDisplay);
+            if ([self isFirstResponder] && self.didBeginEditingHandler != nil) {
+                self.didBeginEditingHandler();
+            } else if (![self isFirstResponder] && self.didEndEditingHandler != nil) {
+                self.didEndEditingHandler();
             }
         }];
     }];

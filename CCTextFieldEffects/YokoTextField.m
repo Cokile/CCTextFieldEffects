@@ -114,8 +114,8 @@ static CGPoint const textFieldInsets = {6, 6};
     [UIView animateWithDuration:0.4 delay:0 usingSpringWithDamping:1.0 initialSpringVelocity:0.6 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         self.foregroundView.layer.transform = CATransform3DIdentity;
     } completion:^(BOOL finished) {
-        if (self.animationCompletionHandler != nil) {
-            self.animationCompletionHandler(CCAnimationTypeTextEntry);
+        if (self.didBeginEditingHandler != nil) {
+            self.didBeginEditingHandler();
         }
     }];
     
@@ -128,8 +128,8 @@ static CGPoint const textFieldInsets = {6, 6};
             self.foregroundLayer.frame = [self rectForBorderBounds:self.foregroundView.frame isFilled:YES];
             self.foregroundView.layer.transform = [self rotationAndPerspectiveTransformForView:self.foregroundView];
         } completion:^(BOOL finished) {
-            if (self.animationCompletionHandler != nil) {
-                self.animationCompletionHandler(CCAnimationTypeTextDisplay);
+            if (self.didEndEditingHandler != nil) {
+                self.didEndEditingHandler();
             }
         }];
     }

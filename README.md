@@ -3,20 +3,20 @@
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Cokile/CCTextFieldEffects/blob/master/Licence)
 [![](https://img.shields.io/github/release/Cokile/CCTextFieldEffects.svg)](https://github.com/Cokile/CCTextFieldEffects/releases)
 
-Custom UITextFields effects inspired by [Codrops](http://tympanus.net/Development/TextInputEffects/index.html), built using Swift, but ported to Objective-C.
+Custom UITextFields effects inspired by [Codrops](http://tympanus.net/Development/TextInputEffects/index.html), which can be used as a simple replacement for `UITextField`. Original effects were built by [Raul Riera](https://github.com/raulriera) using Swift, but ported to Objective-C.
 
-It now support
+It now supports
 
-- [x] [Akira](https://github.com/Cokile/CCTextFieldEffects#akira)
-- [x] [Hoshi](https://github.com/Cokile/CCTextFieldEffects#hoshi)
-- [x] [Isao](https://github.com/Cokile/CCTextFieldEffects#isao)
-- [x] [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro)
-- [x] [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede)
-- [x] [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka)
-- [x] [Yoko](https://github.com/Cokile/CCTextFieldEffects#yoko)
-- [x] [Yoshiko](https://github.com/Cokile/CCTextFieldEffects#yoshiko)
-- [x] [Hideo](https://github.com/Cokile/CCTextFieldEffects#Hideo)
-
+|                 Original                 |                Extension                 |
+| :--------------------------------------: | :--------------------------------------: |
+| [Akira](https://github.com/Cokile/CCTextFieldEffects#akira) | [Hideo](https://github.com/Cokile/CCTextFieldEffects#hideo) |
+| [Hoshi](https://github.com/Cokile/CCTextFieldEffects#hoshi) |                                          |
+| [Isao](https://github.com/Cokile/CCTextFieldEffects#isao) |                                          |
+| [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro) |                                          |
+| [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede) |                                          |
+| [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka) |                                          |
+| [Yoko](https://github.com/Cokile/CCTextFieldEffects#yoko) |                                          |
+| [Yoshiko](https://github.com/Cokile/CCTextFieldEffects#yoshiko) |                                          |
 
 
 
@@ -67,18 +67,17 @@ self.akiraTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R170 G170 B170
 self.akiraTextField.textColor = <#UIColor#>;
 
-// The block excuted when the animation has completed.
-self.akiraTextField.animationCompletionHandler = ^(CCAnimationType type){
-	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation has obtained focus has completed.
-      	// ...
-	}
-  
-  	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation for losed focus has completed.
-      	// ...
-	}
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.akiraTextField.didBeginEditingHandler = ^{
+    // ...
 };
+
+// The block excuted when the animation for losing focus has completed.
+self.akiraTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
 
 [self.view addSubview:self.akiraTextView];
 ```
@@ -116,18 +115,17 @@ self.hoshiTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R71 G76 B91
 self.hoshiTextField.textColor = <#UIColor#>;
 
-// The block excuted when the animation has completed.
-self.hoshiTextField.animationCompletionHandler = ^(CCAnimationType type){
-	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation has obtained focus has completed.
-      	// ...
-	}
-  
-  	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation for losed focus has completed.
-      	// ...
-	}
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.hoshiTextField.didBeginEditingHandler = ^{
+    // ...
 };
+
+// The block excuted when the animation for losing focus has completed.
+self.hoshiTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
 
 [self.view addSubview:self.hoshiTextField];
 ```
@@ -161,18 +159,17 @@ self.isaoTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R175 G179 B184
 self.isaoTextField.textColor = <#UIColor#>;
 
-// The block excuted when the animation has completed.
-self.isaoTextField.animationCompletionHandler = ^(CCAnimationType type){
-	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation has obtained focus has completed.
-      	// ...
-	}
-  
-  	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation for losed focus has completed.
-      	// ...
-	}
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.isaoTextField.didBeginEditingHandler = ^{
+    // ...
 };
+
+// The block excuted when the animation for losing focus has completed.
+self.isaoTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
 
 [self.view addSubview:self.isaoTextField];
 ```
@@ -207,18 +204,17 @@ self.jiroTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R211 G226 B226
 self.jiroTextField.textColor = <#UIColor#>;
 
-// The block excuted when the animation has completed.
-self.jiroTextField.animationCompletionHandler = ^(CCAnimationType type){
-	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation has obtained focus has completed.
-      	// ...
-	}
-  
-  	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation for losed focus has completed.
-      	// ...
-	}
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.jiroTextField.didBeginEditingHandler = ^{
+    // ...
 };
+
+// The block excuted when the animation for losing focus has completed.
+self.jiroTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
 
 [self.view addSubview:self.jiroTextField];
 ```
@@ -242,7 +238,6 @@ self.kaedeTextField = [[kaedeTextField alloc] initWithFrame:<#CGRect#>];
 self.kaedeTextField.placeholderFontScale = <#CGFloat#>;
 
 // The color of the foreground, default value is R239 G238 B238
-// The background color is clear color.
 self.kaedeTextField.foregroundColor = <#UIColor#>;
 
 // The color of the placeholder, default value is R106 G121 B137
@@ -254,18 +249,17 @@ self.kaedeTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R175 G171 B186
 self.kaedeTextField.textColor = <#UIColor#>;
 
-// The block excuted when the animation has completed.
-self.kaedeTextField.animationCompletionHandler = ^(CCAnimationType type){
-	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation has obtained focus has completed.
-      	// ...
-	}
-  
-  	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation for losed focus has completed.
-      	// ...
-	}
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.kaedeTextField.didBeginEditingHandler = ^{
+    // ...
 };
+
+// The block excuted when the animation for losing focus has completed.
+self.kaedeTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
 
 [self.view addSubview:self.kaedeTextField];
 ```
@@ -300,18 +294,17 @@ self.madokaTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R103 G100 B124
 self.madokaTextField.textColor = <#UIColor#>;
 
-// The block excuted when the animation has completed.
-self.madokaTextField.animationCompletionHandler = ^(CCAnimationType type){
-	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation has obtained focus has completed.
-      	// ...
-	}
-  
-  	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation for losed focus has completed.
-      	// ...
-	}
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.madokaTextField.didBeginEditingHandler = ^{
+    // ...
 };
+
+// The block excuted when the animation for losing focus has completed.
+self.madokaTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
 
 [self.view addSubview:self.madokaTextField];
 ```
@@ -326,40 +319,39 @@ self.madokaTextField.animationCompletionHandler = ^(CCAnimationType type){
 #import "CCTextFieldEffects.h"
 
 //...
-@property (strong, nonatomic) KaedeTextField *kaedeTextField;
+@property (strong, nonatomic) YokoTextField *yokoTextField;
 
 //...
-self.kaedeTextField = [[kaedeTextField alloc] initWithFrame:<#CGRect#>];
+self.yokoTextField = [[YokoTextField alloc] initWithFrame:<#CGRect#>];
 
 // The size of the placeholder label relative to the font size of the text field, default value is 0.7
-self.kaedeTextField.placeholderFontScale = <#CGFloat#>;
+self.yokoTextField.placeholderFontScale = <#CGFloat#>;
 
 // The color of the foreground, default value is R0 G0 B0
-self.kaedeTextField.foregroundColor = <#UIColor#>;
+self.yokoTextField.foregroundColor = <#UIColor#>;
 
 // The color of the placeholder, default value is R176 G175 B64
-self.kaedeTextField.placeholderColor = <#UIColor#>;
+self.yokoTextField.placeholderColor = <#UIColor#>;
 
 // The color of the cursor, default value is R245 G245 B245
-self.kaedeTextField.cursorColor = <#UIColor#>;
+self.yokoTextField.cursorColor = <#UIColor#>;
 
 // The color of the text, default value is R245 G245 B245
-self.kaedeTextField.textColor = <#UIColor#>;
+self.yokoTextField.textColor = <#UIColor#>;
 
-// The block excuted when the animation has completed.
-self.kaedeTextField.animationCompletionHandler = ^(CCAnimationType type){
-	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation has obtained focus has completed.
-      	// ...
-	}
-  
-  	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation for losed focus has completed.
-      	// ...
-	}
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.yokoTextField.didBeginEditingHandler = ^{
+    // ...
 };
 
-[self.view addSubview:self.kaedeTextField];
+// The block excuted when the animation for losing focus has completed.
+self.yokoTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
+
+[self.view addSubview:self.yokoTextField];
 ```
 
 
@@ -399,18 +391,17 @@ self.yoshikoTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R170 G170 B170
 self.yoshikoTextField.textColor = <#UIColor#>;
 
-// The block excuted when the animation has completed.
-self.yoshikoTextField.animationCompletionHandler = ^(CCAnimationType type){
-	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation has obtained focus has completed.
-      	// ...
-	}
-  
-  	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation for losed focus has completed.
-      	// ...
-	}
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.yoshikoTextField.didBeginEditingHandler = ^{
+    // ...
 };
+
+// The block excuted when the animation for losing focus has completed.
+self.yoshikoTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
 
 [self.view addSubview:self.yoshikoTextField];
 ```
@@ -445,18 +436,17 @@ self.hideoTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R170 G170 B170
 self.hideoTextField.textColor = <#UIColor#>;
 
-// The block excuted when the animation has completed.
-self.hideoTextField.animationCompletionHandler = ^(CCAnimationType type){
-	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation has obtained focus has completed.
-      	// ...
-	}
-  
-  	if (type == CCAnimationTypeTextEntry) {
-  		// The code excuted when the animation for losed focus has completed.
-      	// ...
-	}
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.hideoTextField.didBeginEditingHandler = ^{
+    // ...
 };
+
+// The block excuted when the animation for losing focus has completed.
+self.hideoTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
 
 [self.view addSubview:self.hideoTextField];
 ```
@@ -473,7 +463,7 @@ self.hideoTextField.animationCompletionHandler = ^(CCAnimationType type){
 
 ## Acknowledgement
 
-Thanks to original developer Raul Riera, [@raulriera](http://twitter.com/raulriera)
+Thanks to original  effects' developer Raul Riera, [@raulriera](http://twitter.com/raulriera)
 
 [https://github.com/raulriera/TextFieldEffects](https://github.com/raulriera/TextFieldEffects)
 

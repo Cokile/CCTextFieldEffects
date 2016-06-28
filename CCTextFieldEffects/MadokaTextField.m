@@ -117,8 +117,8 @@ static CGPoint const placeholderInsets = {6, 6};
         
         self.placeholderLabel.transform = CGAffineTransformConcat(translate, scale);
     } completion:^(BOOL finished) {
-        if (self.animationCompletionHandler != nil) {
-            self.animationCompletionHandler(CCAnimationTypeTextEntry);
+        if (self.didBeginEditingHandler != nil) {
+            self.didBeginEditingHandler();
         }
     }];
 }
@@ -130,8 +130,8 @@ static CGPoint const placeholderInsets = {6, 6};
         [UIView animateWithDuration:0.3 animations:^{
             self.placeholderLabel.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
-            if (self.animationCompletionHandler != nil) {
-                self.animationCompletionHandler(CCAnimationTypeTextDisplay);
+            if (self.didEndEditingHandler != nil) {
+                self.didEndEditingHandler();
             }
         }];
     }

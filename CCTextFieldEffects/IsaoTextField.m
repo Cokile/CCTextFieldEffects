@@ -192,8 +192,10 @@ static CGPoint const placeholderInsets = {6, 6};
             self.placeholderLabel.transform = CGAffineTransformIdentity;
             self.placeholderLabel.alpha = 1;
         } completion:^(BOOL finished) {
-            if (self.animationCompletionHandler != nil) {
-                self.animationCompletionHandler([self isFirstResponder]?CCAnimationTypeTextEntry:CCAnimationTypeTextDisplay);
+            if ([self isFirstResponder] && self.didBeginEditingHandler!= nil) {
+                self.didBeginEditingHandler();
+            } else if (![self isFirstResponder] && self.didEndEditingHandler != nil) {
+                self.didEndEditingHandler();
             }
         }];
     }];

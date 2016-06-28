@@ -118,8 +118,8 @@ static CGPoint const placeHolderInsets = {6, 0};
         [self updateBorder];
         [self updatePlaceholder];
     } completion:^(BOOL finished) {
-        if (self.animationCompletionHandler != nil) {
-            self.animationCompletionHandler(CCAnimationTypeTextEntry);
+        if (self.didBeginEditingHandler != nil) {
+            self.didBeginEditingHandler();
         }
     }];
 }
@@ -129,8 +129,8 @@ static CGPoint const placeHolderInsets = {6, 0};
         [self updateBorder];
         [self updatePlaceholder];
     } completion:^(BOOL finished) {
-        if (self.animationCompletionHandler != nil) {
-            self.animationCompletionHandler(CCAnimationTypeTextDisplay);
+        if (self.didEndEditingHandler != nil) {
+            self.didEndEditingHandler();
         }
     }];
 }

@@ -90,13 +90,13 @@ static CGPoint const textFieldInsets = {6 ,0};
         // Prevent cursor display in front of the container view when animating.
         [self bringSubviewToFront:self.imageContainerView];
         
-        [UIView animateWithDuration:0.3 animations:^{
-            self.imageContainerView.frame = CGRectMake(0, 0, CGRectGetWidth(self.imageContainerView.frame)*0.75, CGRectGetHeight(self.imageContainerView.frame));
+        [UIView animateWithDuration:0.27 animations:^{
+            self.imageContainerView.frame = CGRectMake(0, 0, CGRectGetWidth(self.imageContainerView.frame)*0.67, CGRectGetHeight(self.imageContainerView.frame));
             self.imageView.transform = CGAffineTransformMakeScale(self.imageScale, self.imageScale);
             self.imageView.center = self.imageContainerView.center;
         } completion:^(BOOL finished) {
-            if (self.animationCompletionHandler != nil) {
-                self.animationCompletionHandler(CCAnimationTypeTextEntry);
+            if (self.didBeginEditingHandler != nil) {
+                self.didBeginEditingHandler();
             }
         }];
     }
@@ -104,13 +104,13 @@ static CGPoint const textFieldInsets = {6 ,0};
 
 - (void)animateViewsForTextDisplay {
     if (self.text.length == 0) {
-        [UIView animateWithDuration:0.3 animations:^{
+        [UIView animateWithDuration:0.27 animations:^{
             self.imageContainerView.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame)*0.22, CGRectGetHeight(self.imageContainerView.frame));
             self.imageView.transform = CGAffineTransformIdentity;
             self.imageView.center = self.imageContainerView.center;
         } completion:^(BOOL finished) {
-            if (self.animationCompletionHandler != nil) {
-                self.animationCompletionHandler(CCAnimationTypeTextDisplay);
+            if (self.didEndEditingHandler != nil) {
+                self.didEndEditingHandler();
             }
         }];
     }
