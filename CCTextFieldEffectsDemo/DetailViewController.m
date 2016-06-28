@@ -112,6 +112,14 @@
         HideoTextField *tf2 = [[HideoTextField alloc] initWithFrame:self.lowFrame];
         tf2.image = [UIImage imageNamed:@"user.png"];
         [self.view addSubview:tf2];
+    } else if ([self.title isEqualToString:@"Haruki"]) {
+        HarukiTextField *tf1 = [[HarukiTextField alloc] initWithFrame:self.highFrame];
+        tf1.placeholder = @"First Name";
+        [self.view addSubview:tf1];
+        
+        HarukiTextField *tf2 = [[HarukiTextField alloc] initWithFrame:self.lowFrame];
+        tf2.placeholder = @"Last Name";
+        [self.view addSubview:tf2];
     }
 }
 

@@ -72,7 +72,6 @@ static CGPoint const placeHolderInsets = {6, 0};
         self.cursorColor = self.borderColor;
         
         self.textColor = [UIColor colorWithRed:0.6667 green:0.6667 blue:0.6667 alpha:1.0];
-        self.font = [UIFont boldSystemFontOfSize:self.font.pointSize];
     }
     
     return self;

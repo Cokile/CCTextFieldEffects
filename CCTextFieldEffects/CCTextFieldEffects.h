@@ -19,5 +19,6 @@
 #import "YokoTextField.h"
 #import "YoshikoTextField.h"
 #import "HideoTextField.h"
+#import "HarukiTextField.h"
 
 #endif

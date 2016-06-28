@@ -10,7 +10,7 @@ It now supports
 |                 Original                 |                Extension                 |
 | :--------------------------------------: | :--------------------------------------: |
 | [Akira](https://github.com/Cokile/CCTextFieldEffects#akira) | [Hideo](https://github.com/Cokile/CCTextFieldEffects#hideo) |
-| [Hoshi](https://github.com/Cokile/CCTextFieldEffects#hoshi) |                                          |
+| [Hoshi](https://github.com/Cokile/CCTextFieldEffects#hoshi) | [Haruki](https://github.com/Cokile/CCTextFieldEffects#haruki) |
 | [Isao](https://github.com/Cokile/CCTextFieldEffects#isao) |                                          |
 | [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro) |                                          |
 | [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede) |                                          |
@@ -449,6 +449,51 @@ self.hideoTextField.didEndEditingHandler = ^{
 // ---------------------------------------------------------
 
 [self.view addSubview:self.hideoTextField];
+```
+
+
+
+### Haruki
+
+![Haruki](Captures/Haruki.gif)
+
+```objective-c
+#import "CCTextFieldEffects.h"
+
+//...
+@property (strong, nonatomic) HarukiTextField *harukiTextField;
+
+//...
+self.harukiTextField = [[HarukiTextField alloc] initWithFrame:<#CGRect#>];
+
+// The size of the placeholder label relative to the font size of the text field, default value is 0.75
+self.harukiTextField.placeholderFontScale = <#CGFloat#>;
+
+// The color of the border, default value is R106 G121 B137 
+self.harukiTextField.borderColor = <#UIColor#>;
+
+// The color of the placeholder, default value is R106 G121 B137
+self.harukiTextField.placeholderColor = <#UIColor#>;
+
+// The color of the cursor, default value is R175 G181 B187
+self.harukiTextField.cursorColor = <#UIColor#>;
+
+// The color of the text, default value is R175 G181 B187
+self.harukiTextField.textColor = <#UIColor#>;
+
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.harukiTextField.didBeginEditingHandler = ^{
+    // ...
+};
+
+// The block excuted when the animation for losing focus has completed.
+self.harukiTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
+
+[self.view addSubview:self.harukiTextField];
 ```
 
 
