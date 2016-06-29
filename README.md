@@ -14,7 +14,7 @@ It now supports
 | [Isao](https://github.com/Cokile/CCTextFieldEffects#isao) | [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) - bug fixed |
 | [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro) | [Kyo](https://github.com/Cokile/CCTextFieldEffects#kyo) |
 | [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede) | [Kuro](https://github.com/Cokile/CCTextFieldEffects#kuro) |
-| [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka) |                                          |
+| [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka) | [Ruri](https://github.com/Cokile/CCTextFieldEffects#ruri) |
 | [Yoko](https://github.com/Cokile/CCTextFieldEffects#yoko) |                                          |
 | [Yoshiko](https://github.com/Cokile/CCTextFieldEffects#yoshiko) |                                          |
 
@@ -674,6 +674,56 @@ self.kuroTextField.didEndEditingHandler = ^{
 // ---------------------------------------------------------
 
 [self.view addSubview:self.kuroTextField];
+```
+
+
+
+### Ruri
+
+![Ruri](Captures/Ruri.gif)
+
+```objective-c
+#import "CCTextFieldEffects.h"
+
+//...
+@property (strong, nonatomic) RuriTextField *ruriTextField;
+
+//...
+self.ruriTextField = [[RuriTextField alloc] initWithFrame:<#CGRect#>];
+
+self.ruriTextField.placeholder = <#NSString#>;
+
+// The size of the placeholder label relative to the font size of the text field, default value is 0.8
+self.ruriTextField.placeholderFontScale = <#CGFloat#>;
+
+// The color of the lower border, default value is R183 G195 B172
+self.ruriTextField.borderColor = <#UIColor#>;
+
+// The color of the border and the placeholder when the text field is not empty or focused, default value is R163 G211 B156
+self.ruriTextField.activeColor = <#UIColor#>;
+
+// The color of the placeholder, default value is R105 G105 B105
+self.ruriTextField.placeholderColor = <#UIColor#>;
+
+// The color of the cursor, default value is R255 G255 B255
+self.ruriTextField.cursorColor = <#UIColor#>;
+
+// The color of the text, default value is R255 G255 B255
+self.ruriTextField.textColor = <#UIColor#>;
+
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.ruriTextField.didBeginEditingHandler = ^{
+    // ...
+};
+
+// The block excuted when the animation for losing focus has completed.
+self.ruriTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
+
+[self.view addSubview:self.ruriTextField];
 ```
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B60B18B71D23CD9000619382 /* RuriTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B60B18B61D23CD9000619382 /* RuriTextField.m */; };
 		B61010881D1F95FC002F562C /* JiroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B61010871D1F95FC002F562C /* JiroTextField.m */; };
 		B610108C1D1FA556002F562C /* KaedeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B610108B1D1FA556002F562C /* KaedeTextField.m */; };
 		B61010901D1FB485002F562C /* MadokaTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B610108F1D1FB485002F562C /* MadokaTextField.m */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B60B18B51D23CD9000619382 /* RuriTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuriTextField.h; sourceTree = "<group>"; };
+		B60B18B61D23CD9000619382 /* RuriTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuriTextField.m; sourceTree = "<group>"; };
 		B61010861D1F95FC002F562C /* JiroTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiroTextField.h; sourceTree = "<group>"; };
 		B61010871D1F95FC002F562C /* JiroTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiroTextField.m; sourceTree = "<group>"; };
 		B610108A1D1FA556002F562C /* KaedeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaedeTextField.h; sourceTree = "<group>"; };
@@ -128,6 +131,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B60B18B41D23CD6D00619382 /* Ruri */ = {
+			isa = PBXGroup;
+			children = (
+				B60B18B51D23CD9000619382 /* RuriTextField.h */,
+				B60B18B61D23CD9000619382 /* RuriTextField.m */,
+			);
+			name = Ruri;
+			sourceTree = "<group>";
+		};
 		B61010851D1F95BE002F562C /* Jiro */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +251,7 @@
 				B6935F4E1D22299D00A6FD16 /* Minoru */,
 				B6935F551D226AF400A6FD16 /* Kyo */,
 				B61510391D234DB7004425A9 /* Kuro */,
+				B60B18B41D23CD6D00619382 /* Ruri */,
 			);
 			path = CCTextFieldEffects;
 			sourceTree = "<group>";
@@ -473,6 +486,7 @@
 				B61010881D1F95FC002F562C /* JiroTextField.m in Sources */,
 				B644A2EA1D20F9F000A887D2 /* HideoTextField.m in Sources */,
 				B64D56211D1DF4C700A9F7BE /* ViewController.m in Sources */,
+				B60B18B71D23CD9000619382 /* RuriTextField.m in Sources */,
 				B6B940AF1D1EB1A6000C66BC /* DetailViewController.m in Sources */,
 				B634FF631D1E4B6E0019D5E8 /* HoshiTextField.m in Sources */,
 				B6935F541D22579B00A6FD16 /* PulsingHaloLayer.m in Sources */,

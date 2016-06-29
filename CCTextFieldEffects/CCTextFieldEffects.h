@@ -23,5 +23,6 @@
 #import "MinoruTextField.h"
 #import "KyoTextField.h"
 #import "KuroTextField.h"
+#import "RuriTextField.h"
 
 #endif
