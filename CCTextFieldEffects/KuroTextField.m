@@ -20,15 +20,15 @@
 /**
     When I implement the original effect for Kuro with two CAShpaLayer, there is a issue for text alignment (thoungh I do not think it is the problem of CAShapeLayer), So I made some change to Kuro.
     The current effect for Kuro can be implemented simply by a CALayer. There is not need to use two CAShapeLayer. But I am somehow lazy to modify the code.
-    // TODO fix the issue or use single CALayer.
+    // TODO: Use single CALayer.
  */
 @implementation KuroTextField
 
 # pragma mark - Constants
 static CGFloat const borderThickness = 3;
-static CGFloat const borderMoveDistance = 20;
-static CGPoint const placeholderInset = {12,2};
-static CGPoint const textFieldInset = {12,0};
+static CGFloat const borderMoveDistance = 12;
+static CGPoint const placeholderInset = {10,2};
+static CGPoint const textFieldInset = {6,0};
 
 # pragma mark - Custom accessorys
 - (void)setBorderColor:(UIColor *)borderColor {
@@ -78,7 +78,7 @@ static CGPoint const textFieldInset = {12,0};
         
         self.placeholderLabel = [[UILabel alloc] init];
         
-        self.placeholderLabel.textAlignment = NSTextAlignmentCenter;
+        //self.placeholderLabel.textAlignment = NSTextAlignmentCenter;
         
         self.borderColor = [UIColor colorWithRed:0.4549 green:0.4745 blue:0.5059 alpha:1];
         self.placeholderColor = [UIColor colorWithRed:0.8745 green:0.3961 blue:0.5373 alpha:1];
@@ -118,7 +118,8 @@ static CGPoint const textFieldInset = {12,0};
     self.rightLayer.path = rightPath.CGPath;
     [self.layer addSublayer:self.rightLayer];
     
-    self.placeholderLabel.frame = [self textRectForBounds:self.bounds];
+    self.placeholderLabel.frame = CGRectMake(placeholderInset.x+borderMoveDistance, (CGRectGetHeight([self textRectForBounds:rect])-self.placeholderHeight)/2+2*borderThickness, CGRectGetWidth(rect), self.placeholderHeight);
+    [self.placeholderLabel sizeToFit];
     [self addSubview:self.placeholderLabel];
 }
 
@@ -147,7 +148,7 @@ static CGPoint const textFieldInset = {12,0};
             self.rightLayer.frame = CGRectOffset(self.rightLayer.frame, borderMoveDistance, 0);
         } completion:^(BOOL finished) {
             [UIView animateWithDuration:0.1 animations:^{
-                self.placeholderLabel.frame = CGRectOffset(self.placeholderLabel.frame, 0, 2*self.placeholderHeight+placeholderInset.y);
+                self.placeholderLabel.frame = CGRectOffset(self.placeholderLabel.frame, -borderMoveDistance, 2*self.placeholderHeight+placeholderInset.y);
                 self.placeholderLabel.transform = CGAffineTransformIdentity;
             } completion:^(BOOL finished) {
                 self.cursorColor = originalCursorColor;
@@ -168,7 +169,7 @@ static CGPoint const textFieldInset = {12,0};
             self.rightLayer.frame = CGRectOffset(self.rightLayer.frame, -borderMoveDistance, 0);
         } completion:^(BOOL finished) {
             [UIView animateWithDuration:0.2 animations:^{
-                self.placeholderLabel.frame = CGRectOffset(self.placeholderLabel.frame, 0, -2*self.placeholderHeight-placeholderInset.y);
+                self.placeholderLabel.frame = CGRectOffset(self.placeholderLabel.frame, borderMoveDistance, -2*self.placeholderHeight-placeholderInset.y);
                 self.placeholderLabel.transform = CGAffineTransformIdentity;
             } completion:^(BOOL finished) {
                 if (self.didEndEditingHandler != nil) {
