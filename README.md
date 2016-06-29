@@ -15,7 +15,7 @@ It now supports
 | [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro) | [Kyo](https://github.com/Cokile/CCTextFieldEffects#kyo) |
 | [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede) | [Kuro](https://github.com/Cokile/CCTextFieldEffects#kuro) |
 | [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka) | [Ruri](https://github.com/Cokile/CCTextFieldEffects#ruri) |
-| [Yoko](https://github.com/Cokile/CCTextFieldEffects#yoko) |                                          |
+| [Yoko](https://github.com/Cokile/CCTextFieldEffects#yoko) | [Chisato](https://github.com/Cokile/CCTextFieldEffects#chisato) |
 | [Yoshiko](https://github.com/Cokile/CCTextFieldEffects#yoshiko) |                                          |
 
 
@@ -39,7 +39,7 @@ Drag all the files in the  `CCTextFieldEffects` folder into your project.
 
 __Note:__ 
 
-- If you run the demo app in the simulator, the animation will get blocked. You should run it in the real iOS device for better test.
+- If you run the demo app in the simulator, the animation may get blocked. You should run it in the real iOS device for better test.
 
 
 - All the text fields are resigned from first responder by pressing the Return button in the keyboard.
@@ -724,6 +724,56 @@ self.ruriTextField.didEndEditingHandler = ^{
 // ---------------------------------------------------------
 
 [self.view addSubview:self.ruriTextField];
+```
+
+
+
+### Chisato
+
+![Chisato](Captures/Chisato.gif)
+
+```objective-c
+#import "CCTextFieldEffects.h"
+
+//...
+@property (strong, nonatomic) ChisatoTextField *chisatoTextField;
+
+//...
+self.chisatoTextField = [[ChisatoTextField alloc] initWithFrame:<#CGRect#>];
+
+self.chisatoTextField.placeholder = <#NSString#>;
+
+// The size of the placeholder label relative to the font size of the text field, default value is 0.8
+self.chisatoTextField.placeholderFontScale = <#CGFloat#>;
+
+// The color of the border bounds, default value is R181 G181 B181
+self.chisatoTextField.borderColor = <#UIColor#>;
+
+// The color of the border and the placeholder when the text field is not empty or focused, default value is R218 G100 B132
+self.chisatoTextField.activeColor = <#UIColor#>;
+
+// The color of the placeholder, default value is R181 G181 B181
+self.chisatoTextField.placeholderColor = <#UIColor#>;
+
+// The color of the cursor, default value is R181 G181 B181
+self.chisatoTextField.cursorColor = <#UIColor#>;
+
+// The color of the text, default value is R181 G181 B181
+self.chisatoTextField.textColor = <#UIColor#>;
+
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.chisatoTextField.didBeginEditingHandler = ^{
+    // ...
+};
+
+// The block excuted when the animation for losing focus has completed.
+self.chisatoTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
+
+[self.view addSubview:self.chisatoTextField];
 ```
 
 
