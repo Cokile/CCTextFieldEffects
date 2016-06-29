@@ -22,5 +22,6 @@
 #import "HarukiTextField.h"
 #import "MinoruTextField.h"
 #import "KyoTextField.h"
+#import "KuroTextField.h"
 
 #endif

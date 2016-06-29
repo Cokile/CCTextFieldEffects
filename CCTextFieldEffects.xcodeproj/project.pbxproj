@@ -12,6 +12,7 @@
 		B61010901D1FB485002F562C /* MadokaTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B610108F1D1FB485002F562C /* MadokaTextField.m */; };
 		B61010941D1FC9B9002F562C /* YokoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B61010931D1FC9B9002F562C /* YokoTextField.m */; };
 		B61010981D1FE431002F562C /* YoshikoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B61010971D1FE431002F562C /* YoshikoTextField.m */; };
+		B615103C1D234DD9004425A9 /* KuroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B615103B1D234DD9004425A9 /* KuroTextField.m */; };
 		B634FF601D1E109F0019D5E8 /* AkiraTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B634FF5F1D1E109F0019D5E8 /* AkiraTextField.m */; };
 		B634FF631D1E4B6E0019D5E8 /* HoshiTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B634FF621D1E4B6E0019D5E8 /* HoshiTextField.m */; };
 		B644A2EA1D20F9F000A887D2 /* HideoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B644A2E91D20F9F000A887D2 /* HideoTextField.m */; };
@@ -61,6 +62,8 @@
 		B61010931D1FC9B9002F562C /* YokoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YokoTextField.m; sourceTree = "<group>"; };
 		B61010961D1FE431002F562C /* YoshikoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoshikoTextField.h; sourceTree = "<group>"; };
 		B61010971D1FE431002F562C /* YoshikoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoshikoTextField.m; sourceTree = "<group>"; };
+		B615103A1D234DD9004425A9 /* KuroTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KuroTextField.h; sourceTree = "<group>"; };
+		B615103B1D234DD9004425A9 /* KuroTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KuroTextField.m; sourceTree = "<group>"; };
 		B634FF5E1D1E109F0019D5E8 /* AkiraTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AkiraTextField.h; sourceTree = "<group>"; };
 		B634FF5F1D1E109F0019D5E8 /* AkiraTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AkiraTextField.m; sourceTree = "<group>"; };
 		B634FF611D1E4B6E0019D5E8 /* HoshiTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HoshiTextField.h; sourceTree = "<group>"; };
@@ -170,6 +173,15 @@
 			name = Yoshiko;
 			sourceTree = "<group>";
 		};
+		B61510391D234DB7004425A9 /* Kuro */ = {
+			isa = PBXGroup;
+			children = (
+				B615103A1D234DD9004425A9 /* KuroTextField.h */,
+				B615103B1D234DD9004425A9 /* KuroTextField.m */,
+			);
+			name = Kuro;
+			sourceTree = "<group>";
+		};
 		B64066DF1D210B6A00289FC4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +238,7 @@
 				B6935F4A1D21FD0100A6FD16 /* Haruki */,
 				B6935F4E1D22299D00A6FD16 /* Minoru */,
 				B6935F551D226AF400A6FD16 /* Kyo */,
+				B61510391D234DB7004425A9 /* Kuro */,
 			);
 			path = CCTextFieldEffects;
 			sourceTree = "<group>";
@@ -453,6 +466,7 @@
 			files = (
 				B61010981D1FE431002F562C /* YoshikoTextField.m in Sources */,
 				B6935F4D1D21FD3400A6FD16 /* HarukiTextField.m in Sources */,
+				B615103C1D234DD9004425A9 /* KuroTextField.m in Sources */,
 				B610108C1D1FA556002F562C /* KaedeTextField.m in Sources */,
 				B6D308331D1DFAFD00C993C3 /* main.m in Sources */,
 				B634FF601D1E109F0019D5E8 /* AkiraTextField.m in Sources */,

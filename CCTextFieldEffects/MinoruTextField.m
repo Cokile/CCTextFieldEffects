@@ -23,7 +23,7 @@
 static CGFloat const borderThickness = 2;
 static CGPoint const placeholderInsets = {6, 6};
 static CGPoint const textFieldInsets = {14, 6};
-static CGPoint const shadowInsets = {8, 0};
+static CGPoint const shadowInsets = {7, 8};
 
 #pragma mark - Custom accessorys
 - (void)setPlaceholderColor:(UIColor *)placeholderColor {
@@ -177,7 +177,7 @@ static CGPoint const shadowInsets = {8, 0};
 }
 
 - (CGRect)rectForBorderBounds:(CGRect)bounds {
-    return CGRectMake(shadowInsets.x, shadowInsets.y+[self placeholderFontFromFont:self.font].lineHeight, CGRectGetWidth(bounds)-shadowInsets.x*2, CGRectGetHeight(bounds)-self.font.lineHeight*2+textFieldInsets.y-shadowInsets.y*2);
+    return CGRectMake(shadowInsets.x, shadowInsets.y, CGRectGetWidth(bounds)-shadowInsets.x*2, CGRectGetHeight(bounds)-self.font.lineHeight-placeholderInsets.y);
 }
 
 - (void)layoutPlaceholderInTextRect {

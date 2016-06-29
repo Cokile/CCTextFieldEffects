@@ -13,7 +13,7 @@ It now supports
 | [Hoshi](https://github.com/Cokile/CCTextFieldEffects#hoshi) | [Haruki](https://github.com/Cokile/CCTextFieldEffects#haruki) |
 | [Isao](https://github.com/Cokile/CCTextFieldEffects#isao) | [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) - bug fixed |
 | [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro) | [Kyo](https://github.com/Cokile/CCTextFieldEffects#kyo) |
-| [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede) |                                          |
+| [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede) | [Kuro](https://github.com/Cokile/CCTextFieldEffects#kuro) |
 | [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka) |                                          |
 | [Yoko](https://github.com/Cokile/CCTextFieldEffects#yoko) |                                          |
 | [Yoshiko](https://github.com/Cokile/CCTextFieldEffects#yoshiko) |                                          |
@@ -627,6 +627,53 @@ self.kyoTextField.didEndEditingHandler = ^{
 // ---------------------------------------------------------
 
 [self.view addSubview:self.kyoTextField];
+```
+
+
+
+### Kuro
+
+![Kuro](Captures/Kuro.gif)
+
+```objective-c
+#import "CCTextFieldEffects.h"
+
+//...
+@property (strong, nonatomic) KuroTextField *kuroTextField;
+
+//...
+self.kuroTextField = [[KuroTextField alloc] initWithFrame:<#CGRect#>];
+
+self.kuroTextField.placeholder = <#NSString#>;
+
+// The size of the placeholder label relative to the font size of the text field, default value is 0.85
+self.kuroTextField.placeholderFontScale = <#CGFloat#>;
+
+// The color of the border, default value is R116 G121 B129
+self.kuroTextField.borderColor = <#UIColor#>;
+
+// The color of the placeholder, default value is R223 G101 B137
+self.kuroTextField.placeholderColor = <#UIColor#>;
+
+// The color of the cursor, default value is R145 G150 B161
+self.kuroTextField.cursorColor = <#UIColor#>;
+
+// The color of the text, default value is R145 G150 B161
+self.kuroTextField.textColor = <#UIColor#>;
+
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.kuroTextField.didBeginEditingHandler = ^{
+    // ...
+};
+
+// The block excuted when the animation for losing focus has completed.
+self.kuroTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
+
+[self.view addSubview:self.kuroTextField];
 ```
 
 

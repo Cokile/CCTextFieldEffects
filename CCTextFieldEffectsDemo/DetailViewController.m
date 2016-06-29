@@ -136,6 +136,14 @@
         KyoTextField *tf2 = [[KyoTextField alloc] initWithFrame:self.lowFrame];
         tf2.placeholder = @"Last Name";
         [self.view addSubview:tf2];
+    } else if ([self.title isEqualToString:@"Kuro"]) {
+        KuroTextField *tf1 = [[KuroTextField alloc] initWithFrame:self.highFrame];
+        tf1.placeholder = @"First Name";
+        [self.view addSubview:tf1];
+        
+        KuroTextField *tf2 = [[KuroTextField alloc] initWithFrame:self.lowFrame];
+        tf2.placeholder = @"Last Name";
+        [self.view addSubview:tf2];
     }
 }
 
