@@ -13,7 +13,7 @@
 
 @property (strong, nonatomic) CALayer *borderLayer;
 @property (strong, nonatomic) UIColor *backgroundLayerColor;
-@property (weak, nonatomic) PulsingHaloLayer *halo;
+@property (strong, nonatomic) PulsingHaloLayer *halo;
 
 @end
 
@@ -72,14 +72,11 @@ static CGPoint const shadowInsets = {7, 8};
     
     if (self) {
         self.borderLayer = [[CALayer alloc] init];
-        
         self.placeholderLabel = [[UILabel alloc] init];
+        
         self.placeholderColor = [UIColor colorWithRed:0.4157 green:0.4745 blue:0.5373 alpha:1];
-        
         self.backgroundColor = [UIColor whiteColor];
-        
         self.borderColor = [UIColor colorWithRed:0.9255 green:0.6353 blue:0.6078 alpha:1];
-        
         self.cursorColor = [UIColor colorWithRed:0.9255 green:0.6353 blue:0.6078 alpha:1];
         self.textColor = self.cursorColor;
         

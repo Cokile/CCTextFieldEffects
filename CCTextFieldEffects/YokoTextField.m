@@ -61,17 +61,14 @@ static CGPoint const textFieldInsets = {6, 6};
     if (self) {
         self.foregroundView = [[UIView alloc] init];
         self.foregroundLayer = [[CALayer alloc] init];
-        
         self.placeholderLabel = [[UILabel alloc] init];
-        self.placeholderColor = [UIColor colorWithRed:0.6902 green:0.2941 blue:0.2501 alpha:1.0];
         
+        self.placeholderColor = [UIColor colorWithRed:0.6902 green:0.2941 blue:0.2501 alpha:1.0];
         self.foregroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
         self.cursorColor = [UIColor colorWithRed:0.9608 green:0.9608 blue:0.9608 alpha:1.0];
         self.textColor = self.cursorColor;
         
-        self.placeholderFontScale = 0.7;
-        
-        self.font = [UIFont boldSystemFontOfSize:self.font.pointSize];
+        self.placeholderFontScale = 0.7;        
     }
     
     return self;

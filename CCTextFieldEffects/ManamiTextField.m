@@ -72,8 +72,8 @@ static CGPoint const placeholderInsets = {6, 6};
     if (self) {
         self.borderLayer = [[CALayer alloc] init];
         self.backgroundLayer = [[CALayer alloc] init];
-        
         self.placeholderLabel = [[UILabel alloc] init];
+        
         self.placeholderColor = [UIColor colorWithRed:0.4118 green:0.4118 blue:0.4118 alpha:1.0];
         self.borderColor = [UIColor colorWithRed:0.6588 green:0.6588 blue:0.6588 alpha:1];
         self.backgroundColor = self.borderColor;
@@ -123,22 +123,23 @@ static CGPoint const placeholderInsets = {6, 6};
 
 #pragma mark - Private methods
 - (void)animateViewsForTextEntry {
-    
-    [UIView animateWithDuration:0.3 animations:^{
-        CGAffineTransform translate = CGAffineTransformMakeTranslation(-placeholderInsets.x, self.placeholderLabel.bounds.size.height + (placeholderInsets.y*2));
-        CGAffineTransform scale = CGAffineTransformMakeScale(0.9, 0.9);
-        self.placeholderLabel.transform = CGAffineTransformConcat(translate, scale);
-        self.placeholderLabel.alpha = 0.4;
-        
-        CGRect backgroundRect = [self editingRectForBounds:self.bounds];
-        self.backgroundLayer.frame = CGRectMake(0, backgroundRect.origin.y, CGRectGetWidth(backgroundRect), CGRectGetHeight(backgroundRect));
-        
-        self.borderLayer.opacity = 0;
-    } completion:^(BOOL finished) {
-        if (self.didBeginEditingHandler != nil) {
-            self.didBeginEditingHandler();
-        }
-    }];
+    if (self.text.length == 0) {
+        [UIView animateWithDuration:0.3 animations:^{
+            CGAffineTransform translate = CGAffineTransformMakeTranslation(-placeholderInsets.x, self.placeholderLabel.bounds.size.height + (placeholderInsets.y*2));
+            CGAffineTransform scale = CGAffineTransformMakeScale(0.9, 0.9);
+            self.placeholderLabel.transform = CGAffineTransformConcat(translate, scale);
+            self.placeholderLabel.alpha = 0.4;
+            
+            CGRect backgroundRect = [self editingRectForBounds:self.bounds];
+            self.backgroundLayer.frame = CGRectMake(0, backgroundRect.origin.y, CGRectGetWidth(backgroundRect), CGRectGetHeight(backgroundRect));
+            
+            self.borderLayer.opacity = 0;
+        } completion:^(BOOL finished) {
+            if (self.didBeginEditingHandler != nil) {
+                self.didBeginEditingHandler();
+            }
+        }];
+    }
 }
 
 - (void)animateViewsForTextDisplay {

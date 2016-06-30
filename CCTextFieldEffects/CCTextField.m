@@ -23,6 +23,8 @@
     
     if (self) {
         self.delegate = self;
+        
+        self.font = [UIFont boldSystemFontOfSize:self.font.pointSize];
     }
     
     return self;

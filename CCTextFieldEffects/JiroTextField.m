@@ -59,16 +59,14 @@ static CGPoint const placeholderInsets = {8, 8};
     
     if (self) {
         self.borderLayer = [[CALayer alloc] init];
-        
         self.placeholderLabel = [[UILabel alloc] init];
+        
         self.borderColor = [UIColor colorWithRed:0.4157 green:0.4745 blue:0.5373 alpha:1.0];
         self.placeholderColor = self.borderColor;
         self.cursorColor = [UIColor colorWithRed:0.8275 green:0.8862 blue:0.8862 alpha:1.0];
         self.textColor = self.cursorColor;
         
-        self.placeholderFontScale = 0.65;
-        
-        self.font = [UIFont boldSystemFontOfSize:self.font.pointSize];
+        self.placeholderFontScale = 0.65;        
     }
     
     return self;

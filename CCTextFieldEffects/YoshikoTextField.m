@@ -18,16 +18,11 @@
 @implementation YoshikoTextField
 
 #pragma mark - Constants
+static CGFloat const borderSize = 2;
 static CGPoint const textFieldInsets = {6, 0};
 static CGPoint const placeholderInsets = {6, 0};
 
 #pragma mark - Custom accessorys
-- (void)setBorderSize:(CGFloat)borderSize {
-    _borderSize = borderSize;
-    
-    [self updateBorder];
-}
-
 - (void)setActiveBorderColor:(UIColor *)activeBorderColor {
     _activeBorderColor = activeBorderColor;
     [self updateBorder];
@@ -83,11 +78,7 @@ static CGPoint const placeholderInsets = {6, 0};
     self = [super initWithFrame:frame];
     
     if (self) {
-        self.borderSize = 2;
-        
         self.borderLayer = [[CALayer alloc] init];
-        self.borderLayer.borderWidth = self.borderSize;
-        
         self.placeholderLabel = [[UILabel alloc] init];
         
         self.placeholderColor = [UIColor colorWithRed:0.5451 green:0.5490 blue:0.5490 alpha:1];
@@ -97,9 +88,7 @@ static CGPoint const placeholderInsets = {6, 0};
         self.cursorColor = [UIColor colorWithRed:0.6666 green:0.6666 blue:0.6666 alpha:1];
         self.textColor = self.cursorColor;
         
-        self.placeholderFontScale = 0.7;
-        
-        self.font = [UIFont boldSystemFontOfSize:self.font.pointSize];
+        self.placeholderFontScale = 0.7;        
     }
     
     return self;
@@ -180,7 +169,7 @@ static CGPoint const placeholderInsets = {6, 0};
 
 - (void)updateBorder {
     self.borderLayer.frame = [self rectForBounds:self.bounds];
-    self.borderLayer.borderWidth = self.borderSize;
+    self.borderLayer.borderWidth = borderSize;
     self.borderLayer.borderColor = [self isFirstResponder] || self.text.length!=0?self.activeBorderColor.CGColor:self.inactiveBorderColor.CGColor;
 }
 

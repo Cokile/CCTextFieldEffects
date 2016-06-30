@@ -15,7 +15,7 @@
 /**
  *  The color of the placeholder text.
  *
- *  This property applies a color to the complete placeholder string. The default value for this property is a gray color.
+ *  This property applies a color to the complete placeholder string. The default value for this property is a dark gray color.
  */
 @property (strong, nonatomic) UIColor *placeholderColor;
 

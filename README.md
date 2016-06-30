@@ -59,6 +59,9 @@ __Note:__
 
 
 - All the text fields are resigned from first responder by pressing the Return button in the keyboard.
+- CCTextFieldEffects needs ARC.
+
+
 
 ### Akira
 
@@ -102,7 +105,7 @@ self.akiraTextField.didEndEditingHandler = ^{
 };
 // ---------------------------------------------------------
 
-[self.view addSubview:self.akiraTextView];
+[self.view addSubview:self.akiraTextField];
 ```
 
 
@@ -137,7 +140,7 @@ self.hoshiTextField.placeholderColor = <#UIColor#>;
 // The color of the cursor, default value is R89 G95 B110
 self.hoshiTextField.cursorColor = <#UIColor#>;
 
-// The color of the text, default value is R71 G76 B91
+// The color of the text, default value is R89 G95 B110
 self.hoshiTextField.textColor = <#UIColor#>;
 
 // ------------- Do not use UITextFieldDelegate -------------
@@ -174,10 +177,10 @@ self.isaoTextField.placeholder = <#NSString#>;
 // The size of the placeholder label relative to the font size of the text field, default value is 0.7
 self.isaoTextField.placeholderFontScale = <#CGFloat#>;
 
-// The color of the inactive color, default value is R218 G218 B218 
+// The color of the inactive border and placeholder, default value is R218 G218 B218 
 self.isaoTextField.inactiveColor = <#UIColor#>;
 
-// The color of the active color, default value is R218 G112 B113
+// The color of the active border and placeholder, default value is R218 G112 B113
 self.isaoTextField.activeColor = <#UIColor#>;
 
 // The color of the cursor, default value is R175 G179 B184
@@ -271,7 +274,7 @@ self.kaedeTextField.placeholderFontScale = <#CGFloat#>;
 // The color of the foreground, default value is R239 G238 B238
 self.kaedeTextField.foregroundColor = <#UIColor#>;
 
-// The color of background of text area. default value is R255 G255 B255
+// The color of background, default value is R255 G255 B255
 self.kaedeTextField.backgroundColor = <#UIColor#>;
 
 // The color of the placeholder, default value is R106 G121 B137
@@ -318,16 +321,16 @@ self.madokaTextField.placeholder = <#NSString#>;
 // The size of the placeholder label relative to the font size of the text field, default value is 0.75
 self.madokaTextField.placeholderFontScale = <#CGFloat#>;
 
-// The color of the border, default value is R103 G100 B124 
+// The color of the border, default value is R122 G117 B147 
 self.madokaTextField.borderColor = <#UIColor#>;
 
-// The color of the placeholder, default value is R103 G100 B124
+// The color of the placeholder, default value is R122 G117 B147
 self.madokaTextField.placeholderColor = <#UIColor#>;
 
-// The color of the cursor, default value is R103 G100 B124
+// The color of the cursor, default value is R122 G117 B147
 self.madokaTextField.cursorColor = <#UIColor#>;
 
-// The color of the text, default value is R103 G100 B124
+// The color of the text, default value is R122 G117 B147
 self.madokaTextField.textColor = <#UIColor#>;
 
 // ------------- Do not use UITextFieldDelegate -------------
@@ -368,7 +371,7 @@ self.yokoTextField.placeholderFontScale = <#CGFloat#>;
 // The color of the foreground, default value is R0 G0 B0
 self.yokoTextField.foregroundColor = <#UIColor#>;
 
-// The color of the placeholder, default value is R176 G175 B64
+// The color of the placeholder, default value is R176 G75 B64
 self.yokoTextField.placeholderColor = <#UIColor#>;
 
 // The color of the cursor, default value is R245 G245 B245
@@ -419,11 +422,11 @@ self.yoshikoTextField.activeBorderColor = <#UIColor#>;
 // Also this is color of the inactive bacoground.
 self.yoshikoTextField.inactiveBorderColor = <#UIColor#>;
 
-// The color of the placeholder, default value is R176 G175 B64
-self.yoshikoTextField.placeholderColor = <#UIColor#>;
-
 // The color of the active background, default value is R249 G247 B246
 self.yoshikoTextField.activeBackgroundColor = <#UIColor#>;
+
+// The color of the placeholder, default value is R139 G140 B139
+self.yoshikoTextField.placeholderColor = <#UIColor#>;
 
 // The color of the cursor, default value is R170 G170 B170
 self.yoshikoTextField.cursorColor = <#UIColor#>;
@@ -566,10 +569,10 @@ self.minoruTextField.placeholderFontScale = <#CGFloat#>;
 // The color of the border, default value is R236 G162 B155 
 self.minoruTextField.borderColor = <#UIColor#>;
 
-// The color of the placeholder, default value is R236 G162 B155
+// The color of the placeholder, default value is R106 G121 B137
 self.minoruTextField.placeholderColor = <#UIColor#>;
 
-// The color of background of text area. default value is R255 G255 B255
+// The color of background of text area, default value is R255 G255 B255
 self.minoruTextField.backgroundColor = <#UIColor#>;
 
 // The color of the cursor, default value is R236 G162 B155
@@ -618,10 +621,10 @@ self.kyoTextField.placeholderFontScale = <#CGFloat#>;
 // The color of the placeholder, default value is R106 G121 B137
 self.kyoTextField.placeholderColor = <#UIColor#>;
 
-// The color of background of text area. default value is R255 G255 B255
+// The color of background of text area, default value is R255 G255 B255
 self.kyoTextField.backgroundColor = <#UIColor#>;
 
-// The color of the overlay, default value is R61 G88 B210 Alpha 0.6
+// The color of the overlay, default value is R61 G88 B210 Alpha0.6
 self.kyoTextField.overlayColor = <#UIColor#>;
 
 // The color of the cursor, default value is R83 G93 B146

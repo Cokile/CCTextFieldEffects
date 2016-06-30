@@ -14,14 +14,14 @@
 /**
  *  The color of the placeholder text.
  *
- *  This property applies a color to the complete placeholder string. The default value for this property is a white color.
+ *  This property applies a color to the complete placeholder string. The default value for this property is a shallow gray color.
  */
 @property (strong, nonatomic) UIColor *placeholderColor;
 
 /**
  *  The view’s foreground color.
  *
- *  The default value for this property is a transparent black color.
+ *  The default value for this property is a black color.
  */
 @property (strong, nonatomic) UIColor *foregroundColor;
 

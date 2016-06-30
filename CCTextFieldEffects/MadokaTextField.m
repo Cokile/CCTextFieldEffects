@@ -62,6 +62,7 @@ static CGPoint const placeholderInsets = {6, 6};
         self.borderLayer.fillColor = [UIColor clearColor].CGColor;
         
         self.placeholderLabel = [[UILabel alloc] init];
+        
         self.placeholderColor = [UIColor colorWithRed:0.4039 green:0.3922 blue:0.4863 alpha:1.0];
         self.borderColor = self.placeholderColor;
         self.borderLayer.strokeColor = self.borderColor.CGColor;
@@ -69,8 +70,6 @@ static CGPoint const placeholderInsets = {6, 6};
         self.textColor = self.placeholderColor;
         
         self.placeholderFontScale = 0.75;
-        
-        self.font = [UIFont boldSystemFontOfSize:self.font.pointSize];
     }
     
     return self;

@@ -15,14 +15,14 @@
 /**
  *  The color of the border.
  *
- *  This property applies a color to the bounds of the control. The default value for this property is a dark gray color.
+ *  This property applies a color to the upper and lower borders of the control. The default value for this property is a dark gray color.
  */
 @property (strong, nonatomic) UIColor *borderColor;
 
 /**
  *  The color of the placeholder text.
  *
- *  This property applies a color to the complete placeholder string. The default value for this property is a fark gray color.
+ *  This property applies a color to the complete placeholder string. The default value for this property is a dark gray color.
  */
 @property (strong, nonatomic) UIColor *placeholderColor;
 

@@ -21,7 +21,7 @@
 /**
  *  The color of the border color when active.
  *
- *  This property applies a color to the border. The default value for this property is a pink color.
+ *  This property applies a color to the border. The default value for this property is a shallow red color.
  */
 @property (strong, nonatomic) UIColor *borderColor;
 

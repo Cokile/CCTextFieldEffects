@@ -12,13 +12,6 @@
 
 #pragma mark - Public properties
 /**
- *  The size of the border.
- *
- *  This property applies a thickness to the border of the control. The default value for this property is 2 points.
- */
-@property (nonatomic) CGFloat borderSize;
-
-/**
  *  The color of the border when it has content.
  *
  *  This property applies a color to the edges of the control. The default value for this property is a green color.
@@ -33,7 +26,7 @@
 @property (strong, nonatomic) UIColor *inactiveBorderColor;
 
 /**
- *  The color of the input's background when it has content. When it's not focused it reverts to the color of the `inactiveBorderColor`
+ *  The color of the input's background when it has content. When it's not focused it reverts to the color of the `inactiveBorderColor` The default value for this property is a white color.
  */
 @property (strong, nonatomic) UIColor *activeBackgroundColor;
 

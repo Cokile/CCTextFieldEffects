@@ -72,8 +72,8 @@ static CGPoint const placeholderInsets = {6, 6};
     if (self) {
         self.borderLayer = [[CALayer alloc] init];
         self.backgroundLayer = [[CALayer alloc] init];
-        
         self.placeholderLabel = [[UILabel alloc] init];
+        
         self.placeholderColor = [UIColor colorWithRed:0.4118 green:0.4118 blue:0.4118 alpha:1.0];
         self.borderColor = [UIColor colorWithRed:0.6078 green:0.6235 blue:0.6235 alpha:1];
         self.backgroundColor = [UIColor whiteColor];

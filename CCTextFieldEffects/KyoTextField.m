@@ -63,15 +63,12 @@ static CGPoint const textFieldInsets = {1, 6};
     
     if (self) {
         self.overlayView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        
         self.borderLayer = [[CALayer alloc] init];
-        
         self.placeholderLabel = [[UILabel alloc] init];
-        self.placeholderColor = [UIColor colorWithRed:0.4157 green:0.4745 blue:0.5373 alpha:1];
         
+        self.placeholderColor = [UIColor colorWithRed:0.4157 green:0.4745 blue:0.5373 alpha:1];
         self.overlayColor  = [UIColor colorWithRed:0.2392 green:0.3451 blue:0.8235 alpha:0.6];
         self.backgroundColor = [UIColor whiteColor];
-        
         self.cursorColor = [UIColor colorWithRed:0.3255 green:0.3647 blue:0.5725 alpha:1];
         self.textColor = self.cursorColor;
         

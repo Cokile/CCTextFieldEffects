@@ -10,10 +10,11 @@
 
 @interface NarikoTextField : CCTextField
 
+#pragma mark - Public properties
 /**
  *  The color of the placeholder text.
  *
- *  This property applies a color to the complete placeholder string. The default value for this property is a purple color.
+ *  This property applies a color to the complete placeholder string. The default value for this property is a gray color.
  */
 @property (strong, nonatomic) UIColor *placeholderColor;
 
@@ -27,7 +28,7 @@
 /**
  *  The color of the background.
  *
- *  This property applies a color to the background of the text area. The default value for this property is a gray color.
+ *  This property applies a color to the background of the text area. The default value for this property is a white color.
  */
 @property (strong, nonatomic) UIColor *backgroundColor;
 

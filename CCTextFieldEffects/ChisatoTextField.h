@@ -26,9 +26,9 @@
 @property (strong, nonatomic) UIColor *placeholderColor;
 
 /**
- *  The color of the border.
+ *  The color of the active border and placeholder.
  *
- *  This property applies a color to the lower edge of the control when the text is not empty or focused. The default value for this property is a pink color.
+ *  This property applies a color to the bounds of the control and placeholder when the text is not empty or focused. The default value for this property is a pink color.
  */
 @property (strong, nonatomic) UIColor *activeColor;
 

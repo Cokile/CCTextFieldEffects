@@ -21,7 +21,7 @@
 /**
  *  The color of the overlay.
  *
- *  This property applies a color to the complete placeholder string. The default value for this property is a transparent blue color.
+ *  This property applies a color to the complete placeholder string. The default value for this property is a transparent transparent purple color.
  */
 @property (strong, nonatomic) UIColor *overlayColor;
 

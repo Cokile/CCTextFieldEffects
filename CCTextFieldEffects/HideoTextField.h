@@ -22,7 +22,7 @@
 /**
  *  The image of the image container view.
  *
- *  This property applies a image to the bounds of the control.
+ *  This property applies a image to the image container.
  */
 @property (strong, nonatomic) UIImage *image;
 

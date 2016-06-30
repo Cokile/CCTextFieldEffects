@@ -76,9 +76,7 @@ static CGPoint const textFieldInset = {6,0};
         self.rightLayer.borderColor = self.rightLayer.fillColor;
         self.rightLayer.lineWidth = borderThickness;
         
-        self.placeholderLabel = [[UILabel alloc] init];
-        
-        //self.placeholderLabel.textAlignment = NSTextAlignmentCenter;
+        self.placeholderLabel = [[UILabel alloc] init];        
         
         self.borderColor = [UIColor colorWithRed:0.4549 green:0.4745 blue:0.5059 alpha:1];
         self.placeholderColor = [UIColor colorWithRed:0.8745 green:0.3961 blue:0.5373 alpha:1];
