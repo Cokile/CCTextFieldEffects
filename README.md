@@ -52,7 +52,7 @@ Drag all the files in the  `CCTextFieldEffects` folder into your project.
 
 __Note:__ 
 
-- Although almost every effect have comment APIs, I do not put the communal APIs in the same area. In most cases, you just use one effect on a single `UIViewController` or other else, so there is no need to scroll up and down the page to see the communal APIs and unique APIs. Just scroll to the effect you need at first ,all you need is there.
+- Although every effect have communal APIs, I do not put them in the same area. In most cases, you just use one effect on a single `UIViewController` or other else, so there is no need to scroll up and down the page to see the communal APIs and unique APIs. Just scroll to the effect you need at first ,all you need is there.
 
 
 - If you run the demo app in the simulator, the animation may get blocked. You should run it in the real iOS device for better test.
