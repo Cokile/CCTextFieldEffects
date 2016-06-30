@@ -7,16 +7,16 @@ Custom UITextFields effects inspired by [Codrops](http://tympanus.net/Developmen
 
 It now supports
 
-|                 Original                 |                Extension                 |
-| :--------------------------------------: | :--------------------------------------: |
-| [Akira](https://github.com/Cokile/CCTextFieldEffects#akira) | [Hideo](https://github.com/Cokile/CCTextFieldEffects#hideo) |
-| [Hoshi](https://github.com/Cokile/CCTextFieldEffects#hoshi) | [Haruki](https://github.com/Cokile/CCTextFieldEffects#haruki) |
-| [Isao](https://github.com/Cokile/CCTextFieldEffects#isao) | [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) - bug fixed |
-| [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro) | [Kyo](https://github.com/Cokile/CCTextFieldEffects#kyo) |
-| [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede) | [Kuro](https://github.com/Cokile/CCTextFieldEffects#kuro) |
-| [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka) | [Ruri](https://github.com/Cokile/CCTextFieldEffects#ruri) |
-| [Yoko](https://github.com/Cokile/CCTextFieldEffects#yoko) | [Chisato](https://github.com/Cokile/CCTextFieldEffects#chisato) |
-| [Yoshiko](https://github.com/Cokile/CCTextFieldEffects#yoshiko) | [Manami](https://github.com/Cokile/CCTextFieldEffects#manami) |
+|                 Original                 |                Extension                 |                Extension                 |
+| :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
+| [Akira](https://github.com/Cokile/CCTextFieldEffects#akira) | [Hideo](https://github.com/Cokile/CCTextFieldEffects#hideo) | [Nariko](https://github.com/Cokile/CCTextFieldEffects#nariko) |
+| [Hoshi](https://github.com/Cokile/CCTextFieldEffects#hoshi) | [Haruki](https://github.com/Cokile/CCTextFieldEffects#haruki) |                                          |
+| [Isao](https://github.com/Cokile/CCTextFieldEffects#isao) | [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) - bug fixed |                                          |
+| [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro) | [Kyo](https://github.com/Cokile/CCTextFieldEffects#kyo) |                                          |
+| [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede) | [Kuro](https://github.com/Cokile/CCTextFieldEffects#kuro) |                                          |
+| [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka) | [Ruri](https://github.com/Cokile/CCTextFieldEffects#ruri) |                                          |
+| [Yoko](https://github.com/Cokile/CCTextFieldEffects#yoko) | [Chisato](https://github.com/Cokile/CCTextFieldEffects#chisato) |                                          |
+| [Yoshiko](https://github.com/Cokile/CCTextFieldEffects#yoshiko) | [Manami](https://github.com/Cokile/CCTextFieldEffects#manami) |                                          |
 
 
 
@@ -840,6 +840,56 @@ self.manamiTextField.didEndEditingHandler = ^{
 // ---------------------------------------------------------
 
 [self.view addSubview:self.manamiTextField];
+```
+
+
+
+### Nariko
+
+![Nariko](Captures/Nariko.gif)
+
+```objective-c
+#import "CCTextFieldEffects.h"
+
+//...
+@property (strong, nonatomic) NarikoTextField *narikoTextField;
+
+//...
+self.narikoTextField = [[NarikoTextField alloc] initWithFrame:<#CGRect#>];
+
+self.narikoTextField.placeholder = <#NSString#>;
+
+// The size of the placeholder label relative to the font size of the text field, default value is 0.85
+self.narikoTextField.placeholderFontScale = <#CGFloat#>;
+
+// The color of the lower border, default value is R155 G159 B159
+self.narikoTextField.borderColor = <#UIColor#>;
+
+// The color of the text area background, default value is R255 G255 B255
+self.narikoTextField.backgroundColor = <#UIColor#>;
+
+// The color of the placeholder, default value is R155 G159 B159
+self.narikoTextField.placeholderColor = <#UIColor#>;
+
+// The color of the cursor, default value is R241 G130 B146
+self.narikoTextField.cursorColor = <#UIColor#>;
+
+// The color of the text, default value is R241 G130 B146
+self.narikoTextField.textColor = <#UIColor#>;
+
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.narikoTextField.didBeginEditingHandler = ^{
+    // ...
+};
+
+// The block excuted when the animation for losing focus has completed.
+self.manamiTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
+
+[self.view addSubview:self.narikoTextField];
 ```
 
 

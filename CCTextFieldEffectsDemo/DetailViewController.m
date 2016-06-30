@@ -168,6 +168,14 @@
         ManamiTextField *tf2 = [[ManamiTextField alloc] initWithFrame:self.lowFrame];
         tf2.placeholder = @"Last Name";
         [self.view addSubview:tf2];
+    } else if ([self.title isEqualToString:@"Nariko"]) {
+        NarikoTextField *tf1 = [[NarikoTextField alloc] initWithFrame:self.highFrame];
+        tf1.placeholder = @"First Name";
+        [self.view addSubview:tf1];
+        
+        NarikoTextField *tf2 = [[NarikoTextField alloc] initWithFrame:self.lowFrame];
+        tf2.placeholder = @"Last Name";
+        [self.view addSubview:tf2];
     }
 }
 
