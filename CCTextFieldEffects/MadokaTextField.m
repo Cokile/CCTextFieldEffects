@@ -68,7 +68,7 @@ static CGPoint const placeholderInsets = {6, 6};
         self.cursorColor = self.placeholderColor;
         self.textColor = self.placeholderColor;
         
-        self.placeholderFontScale = 0.65;
+        self.placeholderFontScale = 0.75;
         
         self.font = [UIFont boldSystemFontOfSize:self.font.pointSize];
     }
@@ -179,7 +179,7 @@ static CGPoint const placeholderInsets = {6, 6};
 }
 
 - (CGRect)rectForBorderBounds:(CGRect)bounds {
-    return CGRectMake(0, 0, CGRectGetWidth(bounds), CGRectGetHeight(bounds)-self.font.lineHeight+textFieldInsets.y);
+    return CGRectMake(0, 0, CGRectGetWidth(bounds), CGRectGetHeight(bounds)-self.font.lineHeight-self.placeholderLabel.font.lineHeight+textFieldInsets.y);
 }
 
 - (void)layoutPlaceholderInTextRect {

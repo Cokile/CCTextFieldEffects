@@ -22,11 +22,14 @@ It now supports
 
 ## Acknowledgement
 
-- Thanks to original  effects' developer Raul Riera, [@raulriera](http://twitter.com/raulriera
+- Thanks to original  effects' developer Raul Riera, [@raulriera](http://twitter.com/raulriera)
 
-  [https://github.com/raulriera/TextFieldEffects](https://github.com/raulriera/TextFieldEffects)
+  [TextFieldEffects: Custom UITextFields effects inspired by Codrops, built using Swift](https://github.com/raulriera/TextFieldEffects)
 
-- The effect of [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) is created by [PlusingHalo](https://github.com/shu223/PulsingHalo).
+- The effect of [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) is created by PlusingHalo.
+
+  [ PlusingHalo: iOS Component for creating a pulsing animation.](https://github.com/shu223/PulsingHalo)
+
 
 
 
@@ -312,7 +315,7 @@ self.madokaTextField = [[MadokaTextField alloc] initWithFrame:<#CGRect#>];
 
 self.madokaTextField.placeholder = <#NSString#>;
 
-// The size of the placeholder label relative to the font size of the text field, default value is 0.65
+// The size of the placeholder label relative to the font size of the text field, default value is 0.75
 self.madokaTextField.placeholderFontScale = <#CGFloat#>;
 
 // The color of the border, default value is R103 G100 B124 
