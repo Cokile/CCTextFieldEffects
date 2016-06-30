@@ -16,7 +16,17 @@ It now supports
 | [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede) | [Kuro](https://github.com/Cokile/CCTextFieldEffects#kuro) |
 | [Madoka](https://github.com/Cokile/CCTextFieldEffects#madoka) | [Ruri](https://github.com/Cokile/CCTextFieldEffects#ruri) |
 | [Yoko](https://github.com/Cokile/CCTextFieldEffects#yoko) | [Chisato](https://github.com/Cokile/CCTextFieldEffects#chisato) |
-| [Yoshiko](https://github.com/Cokile/CCTextFieldEffects#yoshiko) |                                          |
+| [Yoshiko](https://github.com/Cokile/CCTextFieldEffects#yoshiko) | [Manami](https://github.com/Cokile/CCTextFieldEffects#manami) |
+
+
+
+## Acknowledgement
+
+- Thanks to original  effects' developer Raul Riera, [@raulriera](http://twitter.com/raulriera
+
+  [https://github.com/raulriera/TextFieldEffects](https://github.com/raulriera/TextFieldEffects)
+
+- The effect of [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) is created by [PlusingHalo](https://github.com/shu223/PulsingHalo).
 
 
 
@@ -35,9 +45,12 @@ Drag all the files in the  `CCTextFieldEffects` folder into your project.
 
 
 
-## Easy to use
+## Easy to use and customisable
 
 __Note:__ 
+
+- Although almost every effect have comment APIs, I do not put the communal APIs in the same area. In most cases, you just use one effect on a single `UIViewController` or other else, so there is no need to scroll up and down the page to see the communal APIs and unique APIs. Just scroll to the effect you need at first ,all you need is there.
+
 
 - If you run the demo app in the simulator, the animation may get blocked. You should run it in the real iOS device for better test.
 
@@ -778,18 +791,57 @@ self.chisatoTextField.didEndEditingHandler = ^{
 
 
 
+### Manami
+
+![Manami](Captures/Manami.gif)
+
+```objective-c
+#import "CCTextFieldEffects.h"
+
+//...
+@property (strong, nonatomic) ManamiTextField *manamiTextField;
+
+//...
+self.manamiTextField = [[ManamiTextField alloc] initWithFrame:<#CGRect#>];
+
+self.manamiTextField.placeholder = <#NSString#>;
+
+// The size of the placeholder label relative to the font size of the text field, default value is 0.9
+self.manamiTextField.placeholderFontScale = <#CGFloat#>;
+
+// The color of the lower border, default value is R168 G168 B168
+self.manamiTextField.borderColor = <#UIColor#>;
+
+// The color of the text area background, default value is R168 G168 B168
+self.manamiTextField.backgroundColor = <#UIColor#>;
+
+// The color of the placeholder, default value is R105 G105 B105
+self.manamiTextField.placeholderColor = <#UIColor#>;
+
+// The color of the cursor, default value is R249 G247 B246
+self.manamiTextField.cursorColor = <#UIColor#>;
+
+// The color of the text, default value is R249 G247 B246
+self.manamiTextField.textColor = <#UIColor#>;
+
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.manamiTextField.didBeginEditingHandler = ^{
+    // ...
+};
+
+// The block excuted when the animation for losing focus has completed.
+self.manamiTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
+
+[self.view addSubview:self.manamiTextField];
+```
+
+
+
 ## TODO
 
 - More types of effects.
 
-
-
-
-
-## Acknowledgement
-
-- Thanks to original  effects' developer Raul Riera, [@raulriera](http://twitter.com/raulriera
-
-  [https://github.com/raulriera/TextFieldEffects](https://github.com/raulriera/TextFieldEffects)
-
-- The effect of [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) is created by [PlusingHalo](https://github.com/shu223/PulsingHalo).

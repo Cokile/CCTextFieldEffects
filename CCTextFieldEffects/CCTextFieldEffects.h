@@ -25,5 +25,6 @@
 #import "KuroTextField.h"
 #import "RuriTextField.h"
 #import "ChisatoTextField.h"
+#import "ManamiTextField.h"
 
 #endif

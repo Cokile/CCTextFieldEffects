@@ -160,6 +160,14 @@
         ChisatoTextField *tf2 = [[ChisatoTextField alloc] initWithFrame:self.lowFrame];
         tf2.placeholder = @"Last Name";
         [self.view addSubview:tf2];
+    } else if ([self.title isEqualToString:@"Manami"]) {
+        ManamiTextField *tf1 = [[ManamiTextField alloc] initWithFrame:self.highFrame];
+        tf1.placeholder = @"First Name";
+        [self.view addSubview:tf1];
+        
+        ManamiTextField *tf2 = [[ManamiTextField alloc] initWithFrame:self.lowFrame];
+        tf2.placeholder = @"Last Name";
+        [self.view addSubview:tf2];
     }
 }
 
