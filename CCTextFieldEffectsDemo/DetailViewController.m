@@ -177,6 +177,16 @@
         tf2.placeholder = @"Last Name";
         [self.view addSubview:tf2];
     }
+    
+    else if ([self.title isEqualToString:@"Sae"]) {
+        SaeTextField *tf1 = [[SaeTextField alloc] initWithFrame:CGRectInset(self.highFrame, 50, 0)];
+        tf1.placeholder = @"First Name";
+        [self.view addSubview:tf1];
+        
+        SaeTextField *tf2 = [[SaeTextField alloc] initWithFrame:CGRectInset(self.lowFrame, 50, 0)];
+        tf2.placeholder = @"Last Name";
+        [self.view addSubview:tf2];
+    }
 }
 
 #pragma mark - Pirvate methods

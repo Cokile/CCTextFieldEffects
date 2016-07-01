@@ -10,7 +10,7 @@ It now supports
 |                 Original                 |                Extension                 |                Extension                 |
 | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: |
 | [Akira](https://github.com/Cokile/CCTextFieldEffects#akira) | [Hideo](https://github.com/Cokile/CCTextFieldEffects#hideo) | [Nariko](https://github.com/Cokile/CCTextFieldEffects#nariko) |
-| [Hoshi](https://github.com/Cokile/CCTextFieldEffects#hoshi) | [Haruki](https://github.com/Cokile/CCTextFieldEffects#haruki) |                                          |
+| [Hoshi](https://github.com/Cokile/CCTextFieldEffects#hoshi) | [Haruki](https://github.com/Cokile/CCTextFieldEffects#haruki) | [Sae](https://github.com/Cokile/CCTextFieldEffects#sae) |
 | [Isao](https://github.com/Cokile/CCTextFieldEffects#isao) | [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) - bug fixed |                                          |
 | [Jiro](https://github.com/Cokile/CCTextFieldEffects#jiro) | [Kyo](https://github.com/Cokile/CCTextFieldEffects#kyo) |                                          |
 | [Kaede](https://github.com/Cokile/CCTextFieldEffects#kaede) | [Kuro](https://github.com/Cokile/CCTextFieldEffects#kuro) |                                          |
@@ -20,7 +20,7 @@ It now supports
 
 
 
-## Acknowledgement
+## Credits
 
 - Thanks to original  effects' developer Raul Riera, [@raulriera](http://twitter.com/raulriera)
 
@@ -28,7 +28,9 @@ It now supports
 
 - The effect of [Minoru](https://github.com/Cokile/CCTextFieldEffects#minoru) is created by PlusingHalo.
 
-  [ PlusingHalo: iOS Component for creating a pulsing animation.](https://github.com/shu223/PulsingHalo)
+  [ PlusingHalo: iOS Component for creating a pulsing animation](https://github.com/shu223/PulsingHalo)
+
+- The default pencil icon for [Sae](https://github.com/Cokile/CCTextFieldEffects#sae) is made by [Madebyoliver](http://www.flaticon.com/authors/madebyoliver) from [Flaticon](http://www.flaticon.com).
 
 
 
@@ -59,7 +61,7 @@ __Note:__
 
 
 - All the text fields are resigned from first responder by pressing the Return button in the keyboard.
-- CCTextFieldEffects needs ARC.
+- CCTextFieldEffects requires ARC.
 
 
 
@@ -893,6 +895,56 @@ self.manamiTextField.didEndEditingHandler = ^{
 // ---------------------------------------------------------
 
 [self.view addSubview:self.narikoTextField];
+```
+
+
+
+### Sae
+
+![Sae](Captures/Sae.gif)
+
+```objective-c
+#import "CCTextFieldEffects.h"
+
+//...
+@property (strong, nonatomic) SaeTextField *saeTextField;
+
+//...
+self.saeTextField = [[SaeTextField alloc] initWithFrame:<#CGRect#>];
+
+self.saeTextField.placeholder = <#NSString#>;
+
+// The size of the placeholder label relative to the font size of the text field, default value is 0.8
+self.saeTextField.placeholderFontScale = <#CGFloat#>;
+
+// The color of the lower border, default value is R255 G255 B255
+self.saeTextField.borderColor = <#UIColor#>;
+
+// The color of the placeholder, default value is R0 G0 B0 Alpha0.4
+self.saeTextField.placeholderColor = <#UIColor#>;
+
+// The color of the cursor, default value is R255 G255 B255
+self.saeTextField.cursorColor = <#UIColor#>;
+
+// The color of the text, default value is R255 G255 B255
+self.saeTextField.textColor = <#UIColor#>;
+
+// The image in the right-down corner, default value is a pencil icon. The color of the image is determined by borderColor.
+self.saeTextField.image = <#UIImage#>;
+
+// ------------- Do not use UITextFieldDelegate -------------
+// The block excuted when the animation for obtaining focus has completed.
+self.saeTextField.didBeginEditingHandler = ^{
+    // ...
+};
+
+// The block excuted when the animation for losing focus has completed.
+self.saeTextField.didEndEditingHandler = ^{
+    // ...
+};
+// ---------------------------------------------------------
+
+[self.view addSubview:self.saeTextField];
 ```
 
 

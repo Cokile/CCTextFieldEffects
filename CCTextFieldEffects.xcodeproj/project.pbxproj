@@ -32,6 +32,8 @@
 		B6B940A81D1E7AAC000C66BC /* IsaoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B940A71D1E7AAC000C66BC /* IsaoTextField.m */; };
 		B6B940AF1D1EB1A6000C66BC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B940AE1D1EB1A6000C66BC /* DetailViewController.m */; };
 		B6B940B11D1EB23C000C66BC /* effects.json in Resources */ = {isa = PBXBuildFile; fileRef = B6B940B01D1EB23C000C66BC /* effects.json */; };
+		B6C4BF471D2600DB00A5E1E4 /* SaeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C4BF461D2600DB00A5E1E4 /* SaeTextField.m */; };
+		B6C4BF491D2600EC00A5E1E4 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C4BF481D2600EC00A5E1E4 /* pencil.png */; };
 		B6D308331D1DFAFD00C993C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D308321D1DFAFD00C993C3 /* main.m */; };
 		B6D308361D1DFB9100C993C3 /* CCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D308351D1DFB9100C993C3 /* CCTextField.m */; };
 		B6D308391D1E040900C993C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D308371D1E040900C993C3 /* Main.storyboard */; };
@@ -108,6 +110,9 @@
 		B6B940AD1D1EB1A6000C66BC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B6B940AE1D1EB1A6000C66BC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		B6B940B01D1EB23C000C66BC /* effects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = effects.json; sourceTree = "<group>"; };
+		B6C4BF451D2600DB00A5E1E4 /* SaeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaeTextField.h; sourceTree = "<group>"; };
+		B6C4BF461D2600DB00A5E1E4 /* SaeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaeTextField.m; sourceTree = "<group>"; };
+		B6C4BF481D2600EC00A5E1E4 /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
 		B6D308321D1DFAFD00C993C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CCTextFieldEffectsDemo/main.m; sourceTree = "<group>"; };
 		B6D308341D1DFB9100C993C3 /* CCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTextField.h; sourceTree = "<group>"; };
 		B6D308351D1DFB9100C993C3 /* CCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTextField.m; sourceTree = "<group>"; };
@@ -291,6 +296,7 @@
 				B60B18B81D23E8A000619382 /* Chisato */,
 				B60B18BC1D2492F400619382 /* Manami */,
 				B60B18C01D24AE2A00619382 /* Nariko */,
+				B6C4BF441D2600BD00A5E1E4 /* Sae */,
 			);
 			path = CCTextFieldEffects;
 			sourceTree = "<group>";
@@ -378,6 +384,16 @@
 				B6B940A71D1E7AAC000C66BC /* IsaoTextField.m */,
 			);
 			name = Isao;
+			sourceTree = "<group>";
+		};
+		B6C4BF441D2600BD00A5E1E4 /* Sae */ = {
+			isa = PBXGroup;
+			children = (
+				B6C4BF451D2600DB00A5E1E4 /* SaeTextField.h */,
+				B6C4BF461D2600DB00A5E1E4 /* SaeTextField.m */,
+				B6C4BF481D2600EC00A5E1E4 /* pencil.png */,
+			);
+			name = Sae;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6B940B11D1EB23C000C66BC /* effects.json in Resources */,
+				B6C4BF491D2600EC00A5E1E4 /* pencil.png in Resources */,
 				B6935F481D21221900A6FD16 /* mail.png in Resources */,
 				B6935F491D21221900A6FD16 /* user.png in Resources */,
 				B6D3083C1D1E041700C993C3 /* LaunchScreen.storyboard in Resources */,
@@ -519,6 +536,7 @@
 				B61010981D1FE431002F562C /* YoshikoTextField.m in Sources */,
 				B6935F4D1D21FD3400A6FD16 /* HarukiTextField.m in Sources */,
 				B615103C1D234DD9004425A9 /* KuroTextField.m in Sources */,
+				B6C4BF471D2600DB00A5E1E4 /* SaeTextField.m in Sources */,
 				B610108C1D1FA556002F562C /* KaedeTextField.m in Sources */,
 				B60B18BF1D24931C00619382 /* ManamiTextField.m in Sources */,
 				B6D308331D1DFAFD00C993C3 /* main.m in Sources */,
