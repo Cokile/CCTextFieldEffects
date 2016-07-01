@@ -146,7 +146,7 @@ static CGPoint const textFieldInset = {6,0};
             self.rightLayer.frame = CGRectOffset(self.rightLayer.frame, borderMoveDistance, 0);
         } completion:^(BOOL finished) {
             [UIView animateWithDuration:0.1 animations:^{
-                self.placeholderLabel.frame = CGRectOffset(self.placeholderLabel.frame, -borderMoveDistance, 2*self.placeholderHeight+placeholderInset.y);
+                self.placeholderLabel.frame = CGRectOffset(self.placeholderLabel.frame, -borderMoveDistance, CGRectGetHeight(self.bounds)*0.5-0.75*borderThickness-0.5*placeholderInset.y);
                 self.placeholderLabel.transform = CGAffineTransformIdentity;
             } completion:^(BOOL finished) {
                 self.cursorColor = originalCursorColor;
@@ -167,7 +167,7 @@ static CGPoint const textFieldInset = {6,0};
             self.rightLayer.frame = CGRectOffset(self.rightLayer.frame, -borderMoveDistance, 0);
         } completion:^(BOOL finished) {
             [UIView animateWithDuration:0.2 animations:^{
-                self.placeholderLabel.frame = CGRectOffset(self.placeholderLabel.frame, borderMoveDistance, -2*self.placeholderHeight-placeholderInset.y);
+                self.placeholderLabel.frame = CGRectOffset(self.placeholderLabel.frame, borderMoveDistance, -CGRectGetHeight(self.bounds)*0.5+0.75*borderThickness+0.5*placeholderInset.y);
                 self.placeholderLabel.transform = CGAffineTransformIdentity;
             } completion:^(BOOL finished) {
                 if (self.didEndEditingHandler != nil) {
