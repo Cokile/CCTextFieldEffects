@@ -119,16 +119,6 @@ static CGPoint const shadowInsets = {7, 8};
     return CGRectInset(newBounds, textFieldInsets.x, 0);
 }
 
-#pragma mark - UITextFieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
-#pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     [UIView animateWithDuration:0.35 animations:^{
         self.borderLayer.borderWidth = borderThickness;
@@ -153,6 +143,7 @@ static CGPoint const shadowInsets = {7, 8};
     }];
 }
 
+#pragma mark - Private methods
 - (void)updateBorder {
     self.borderLayer.frame = [self rectForBorderBounds:self.frame];
     self.borderLayer.backgroundColor = self.backgroundColor.CGColor;

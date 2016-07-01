@@ -97,16 +97,6 @@ static CGPoint const placeholderInsets = {6, 6};
     return CGRectInset([self rectForBorderBounds:bounds], textFieldInsets.x, 0);
 }
 
-#pragma mark - UITextFieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
-#pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     self.borderLayer.strokeEnd = 1;
     
@@ -136,6 +126,7 @@ static CGPoint const placeholderInsets = {6, 6};
     }
 }
 
+#pragma mark - Private methods
 - (void)updateBorder {
     CGRect rect = [self rectForBorderBounds:self.bounds];
     

@@ -107,16 +107,6 @@ static CGPoint const placeholderInsets = {0, 6};
     return CGRectOffset(bounds, textFieldInsets.x, textFieldInsets.y);
 }
 
-#pragma mark - UITextFieldDelagate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
-#pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     if (self.text.length == 0) {
         [UIView animateWithDuration:0.35 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:1.0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
@@ -154,6 +144,7 @@ static CGPoint const placeholderInsets = {0, 6};
     }
 }
 
+#pragma mark - Private methods
 - (void)updateBorder{
     self.inactiveBorderLayer.frame = [self rectForBorderThickness:inactiveBorderThickness isFilled:YES];
     self.inactiveBorderLayer.backgroundColor = self.borderInactiveColor.CGColor;

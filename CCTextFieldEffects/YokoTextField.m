@@ -96,17 +96,6 @@ static CGPoint const textFieldInsets = {6, 6};
     return CGRectInset(newBounds, textFieldInsets.x, 0);
 }
 
-#pragma mark - UITextFieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
-#pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     [UIView animateWithDuration:0.4 delay:0 usingSpringWithDamping:1.0 initialSpringVelocity:0.6 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         self.foregroundView.layer.transform = CATransform3DIdentity;
@@ -132,6 +121,7 @@ static CGPoint const textFieldInsets = {6, 6};
     }
 }
 
+#pragma mark - Private methods
 - (void)updatePlaceholder {
     self.placeholderLabel.font = [self placeholderFontFromFont:self.font];
     self.placeholderLabel.text = self.placeholder;

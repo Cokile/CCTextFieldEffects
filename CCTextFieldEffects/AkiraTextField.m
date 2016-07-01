@@ -102,16 +102,6 @@ static CGPoint const placeHolderInsets = {6, 0};
     return CGRectOffset(bounds, textFieldInsets.x, textFieldInsets.y+self.placeholderHeight/2);
 }
 
-#pragma mark - UITextFieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
-#pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     [UIView animateWithDuration:0.35 animations:^{
         [self updateBorder];
@@ -134,6 +124,7 @@ static CGPoint const placeHolderInsets = {6, 0};
     }];
 }
 
+#pragma mark - Private methods
 - (void)updateBorder {
     self.borderLayer.frame = [self rectForBounds:self.bounds];
     self.borderLayer.borderWidth = ([self isFirstResponder] || self.text.length!=0)?activeSize:inactiveSize;

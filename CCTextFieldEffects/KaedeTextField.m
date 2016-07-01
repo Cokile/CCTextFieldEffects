@@ -103,16 +103,6 @@ static CGPoint const placeholderInsets = {10, 5};
     return CGRectInset(frame, textFieldInsets.x, textFieldInsets.y);
 }
 
-#pragma mark - UITextFieldDelegare
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
-#pragma mark - Private methos
 - (void)animateViewsForTextEntry {
     [UIView animateWithDuration:0.16 animations:^{
         self.placeholderLabel.frame = CGRectMake(CGRectGetWidth(self.frame)*0.65, placeholderInsets.y, CGRectGetWidth(self.placeholderLabel.frame), CGRectGetHeight(self.placeholderLabel.frame));
@@ -134,7 +124,7 @@ static CGPoint const placeholderInsets = {10, 5};
         }];
         
         [UIView animateWithDuration:0.3 animations:^{
-             self.foregroundView.frame = CGRectMake(0, 0, CGRectGetWidth(self.foregroundView.frame), CGRectGetHeight(self.foregroundView.frame));
+            self.foregroundView.frame = CGRectMake(0, 0, CGRectGetWidth(self.foregroundView.frame), CGRectGetHeight(self.foregroundView.frame));
         } completion:^(BOOL finished) {
             if (self.didEndEditingHandler != nil) {
                 self.didEndEditingHandler();
@@ -143,6 +133,7 @@ static CGPoint const placeholderInsets = {10, 5};
     }
 }
 
+#pragma mark - Private methos
 - (void)updatePlaceholder {
     self.placeholderLabel.text = self.placeholder;
     self.placeholderLabel.textColor = self.placeholderColor;

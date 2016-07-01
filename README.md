@@ -96,17 +96,17 @@ self.akiraTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R170 G170 B170
 self.akiraTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.akiraTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.akiraTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.akiraTextField];
 ```
@@ -146,17 +146,17 @@ self.hoshiTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R89 G95 B110
 self.hoshiTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.hoshiTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.hoshiTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.hoshiTextField];
 ```
@@ -192,17 +192,17 @@ self.isaoTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R175 G179 B184
 self.isaoTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.isaoTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.isaoTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.isaoTextField];
 ```
@@ -239,17 +239,17 @@ self.jiroTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R211 G226 B226
 self.jiroTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.jiroTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.jiroTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.jiroTextField];
 ```
@@ -289,17 +289,17 @@ self.kaedeTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R175 G171 B186
 self.kaedeTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.kaedeTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.kaedeTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.kaedeTextField];
 ```
@@ -336,17 +336,17 @@ self.madokaTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R122 G117 B147
 self.madokaTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.madokaTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.madokaTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.madokaTextField];
 ```
@@ -383,17 +383,17 @@ self.yokoTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R245 G245 B245
 self.yokoTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.yokoTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.yokoTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.yokoTextField];
 ```
@@ -437,17 +437,17 @@ self.yoshikoTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R170 G170 B170
 self.yoshikoTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.yoshikoTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.yoshikoTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.yoshikoTextField];
 ```
@@ -487,17 +487,17 @@ self.hideoTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R170 G170 B170
 self.hideoTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.hideoTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.hideoTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.hideoTextField];
 ```
@@ -534,17 +534,17 @@ self.harukiTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R175 G181 B187
 self.harukiTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.harukiTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.harukiTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.harukiTextField];
 ```
@@ -584,17 +584,17 @@ self.minoruTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R236 G162 B155
 self.minoruTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.minoruTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.minoruTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.minoruTextField];
 ```
@@ -605,7 +605,7 @@ self.minoruTextField.didEndEditingHandler = ^{
 
 ![Kyo](Captures/Kyo.gif)
 
-Note: To dismiss the keyboard, just by press the Return button in the keyboard.
+__Note:__ Since Kyo will add a overlay, to dismiss the keyboard, you should write your own code to let `KyoTextField` resign first responder.
 
 ```objective-c
 #import "CCTextFieldEffects.h"
@@ -636,17 +636,17 @@ self.kyoTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R83 G93 B146
 self.kyoTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.kyoTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.kyoTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.kyoTextField];
 ```
@@ -683,17 +683,17 @@ self.kuroTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R145 G150 B161
 self.kuroTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.kuroTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.kuroTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.kuroTextField];
 ```
@@ -733,17 +733,17 @@ self.ruriTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R255 G255 B255
 self.ruriTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.ruriTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.ruriTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.ruriTextField];
 ```
@@ -783,17 +783,17 @@ self.chisatoTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R181 G181 B181
 self.chisatoTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.chisatoTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.chisatoTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.chisatoTextField];
 ```
@@ -833,17 +833,17 @@ self.manamiTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R249 G247 B246
 self.manamiTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.manamiTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.manamiTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.manamiTextField];
 ```
@@ -883,17 +883,17 @@ self.narikoTextField.cursorColor = <#UIColor#>;
 // The color of the text, default value is R241 G130 B146
 self.narikoTextField.textColor = <#UIColor#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.narikoTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
-self.manamiTextField.didEndEditingHandler = ^{
+// Do not use textFieldDidEndEditing:
+self.narikoTextField.didEndEditingHandler = ^{
     // ...
-};
-// ---------------------------------------------------------
+};-
 
 [self.view addSubview:self.narikoTextField];
 ```
@@ -933,17 +933,17 @@ self.saeTextField.textColor = <#UIColor#>;
 // The image in the right-down corner, default value is a pencil icon. The color of the image is determined by borderColor.
 self.saeTextField.image = <#UIImage#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.saeTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.saeTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.saeTextField];
 ```
@@ -983,17 +983,17 @@ self.kohanaTextField.textColor = <#UIColor#>;
 // The image of the control. The color of the image is determined by placeholderColor.
 self.kohanaTextField.image = <#UIImage#>;
 
-// ------------- Do not use UITextFieldDelegate -------------
 // The block excuted when the animation for obtaining focus has completed.
+// Do not use textFieldDidBeginEditing:
 self.kohanaTextField.didBeginEditingHandler = ^{
     // ...
 };
 
 // The block excuted when the animation for losing focus has completed.
+// Do not use textFieldDidEndEditing:
 self.kohanaTextField.didEndEditingHandler = ^{
     // ...
 };
-// ---------------------------------------------------------
 
 [self.view addSubview:self.kohanaTextField];
 ```

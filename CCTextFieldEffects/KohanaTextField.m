@@ -93,16 +93,6 @@ static CGPoint const textFieldInsets = {6, 0};
     return CGRectMake(rect.origin.x, rect.origin.y, CGRectGetWidth(rect)-2*textFieldInsets.x-length, CGRectGetHeight(rect));
 }
 
-#pragma mark - UITextFieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
-#pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     if (self.text.length == 0) {
         [UIView animateWithDuration:0.25 animations:^{
@@ -131,6 +121,7 @@ static CGPoint const textFieldInsets = {6, 0};
     }
 }
 
+#pragma mark - Private methods
 - (UIFont *)placeholderFontFromFont:(UIFont *)font {
     UIFont *smallerFont = [UIFont fontWithName:font.fontName size:font.pointSize*self.placeholderFontScale];
     

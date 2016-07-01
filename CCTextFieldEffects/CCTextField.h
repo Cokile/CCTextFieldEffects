@@ -15,7 +15,7 @@
  */
 typedef void(^AnimationCompletionHandler)(void);
 
-@interface CCTextField : UITextField <UITextFieldDelegate>
+@interface CCTextField : UITextField
 
 #pragma mark - Public properties
 /**
@@ -39,6 +39,16 @@ typedef void(^AnimationCompletionHandler)(void);
 @property (copy, nonatomic) AnimationCompletionHandler didEndEditingHandler;
 
 #pragma mark - Public methods
+/**
+ *  Creates all the animations that are used to leave the textfield in the "entering text" state.
+ */
+- (void)animateViewsForTextEntry;
+
+/**
+ *  Creates all the animations that are used to leave the textfield in the "display input text" state.
+ */
+- (void)animateViewsForTextDisplay;
+
 - (void)updateViewsForBoundsChange:(CGRect)bounds;
 
 @end

@@ -104,16 +104,6 @@ static CGPoint const textFieldInsets = {1, 6};
     return CGRectInset(newBounds, textFieldInsets.x+self.borderLayer.cornerRadius, 0);
 }
 
-#pragma mark - UITextFieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
-#pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     if (self.superview != nil) {
         self.index = [self.superview.subviews indexOfObject:self];
@@ -148,6 +138,7 @@ static CGPoint const textFieldInsets = {1, 6};
     }
 }
 
+#pragma mark - Private methods
 - (void)updateBorder {
     self.borderLayer.frame = [self rectForBorderBounds:self.frame];
     self.borderLayer.cornerRadius = CGRectGetHeight(self.borderLayer.frame)/2;

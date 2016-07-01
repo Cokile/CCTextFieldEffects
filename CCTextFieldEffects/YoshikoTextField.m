@@ -124,13 +124,12 @@ static CGPoint const placeholderInsets = {6, 0};
     self.placeholderLabel.alpha = 1;
 }
 
-#pragma mark - UITextFieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
+- (void)animateViewsForTextEntry {
+    [self animateViews];
 }
 
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
+- (void)animateViewsForTextDisplay {
+    [self animateViews];
 }
 
 #pragma mark - Private methods
@@ -157,14 +156,6 @@ static CGPoint const placeholderInsets = {6, 0};
             }
         }];
     }];
-}
-
-- (void)animateViewsForTextEntry {
-    [self animateViews];
-}
-
-- (void)animateViewsForTextDisplay {
-    [self animateViews];
 }
 
 - (void)updateBorder {

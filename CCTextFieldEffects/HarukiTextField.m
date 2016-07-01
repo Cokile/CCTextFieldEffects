@@ -78,15 +78,6 @@ static CGPoint const placeHolderInsets = {8, 0};
     return self;
 }
 
-#pragma mark - UiTextFieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
 #pragma mark - Overridden methods
 - (void)drawRect:(CGRect)rect {
     self.upperLayer.frame = CGRectMake(0, self.placeholderHeight+borderMoveDistance, CGRectGetWidth(self.bounds), borderSize);
@@ -115,7 +106,6 @@ static CGPoint const placeHolderInsets = {8, 0};
     return CGRectOffset(bounds, textFieldInsets.x, textFieldInsets.y+self.placeholderHeight/2);
 }
 
-#pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     if (self.text.length == 0) {
         // Hide the cursor when the animating
@@ -150,6 +140,7 @@ static CGPoint const placeHolderInsets = {8, 0};
     }
 }
 
+#pragma mark - Private methods
 - (UIFont *)placeholderFontFromFont:(UIFont *)font {
     UIFont *smallerFont = [UIFont fontWithName:font.fontName size:font.pointSize*self.placeholderFontScale];
     

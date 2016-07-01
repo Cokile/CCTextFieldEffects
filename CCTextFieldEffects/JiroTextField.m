@@ -93,16 +93,6 @@ static CGPoint const placeholderInsets = {8, 8};
     return CGRectOffset(bounds, textFieldInsets.x, textFieldInsets.y);
 }
 
-#pragma mark - UITextfieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
-#pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     self.borderLayer.frame= CGRectMake(0, self.font.lineHeight, CGRectGetWidth(self.borderLayer.frame), CGRectGetHeight(self.borderLayer.frame));
     
@@ -131,6 +121,7 @@ static CGPoint const placeholderInsets = {8, 8};
     }
 }
 
+#pragma mark - Private methods
 - (void)updateBorder {
     self.borderLayer.frame = [self rectForBorderThickness:borderThickness isFilled:NO];
     self.borderLayer.backgroundColor = self.borderColor.CGColor;

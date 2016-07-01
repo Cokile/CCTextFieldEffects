@@ -22,15 +22,25 @@
     self = [super initWithFrame:frame];
     
     if (self) {
-        self.delegate = self;
-        
         self.font = [UIFont boldSystemFontOfSize:self.font.pointSize];
     }
     
     return self;
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 #pragma mark - Public methods
+- (void)animateViewsForTextEntry {
+    NSAssert(NO, @"%@ must be overridden", NSStringFromSelector(_cmd));
+}
+
+- (void)animateViewsForTextDisplay {
+    NSAssert(NO, @"%@ must be overridden", NSStringFromSelector(_cmd));
+}
+
 - (void)updateViewsForBoundsChange:(CGRect)bounds {
     NSAssert(NO, @"%@ must be overridden", NSStringFromSelector(_cmd));
 }
@@ -40,11 +50,11 @@
     // Don't draw any placeholders.
 }
 
-#pragma mark - UITextFieldDelegate
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [self resignFirstResponder];
-    
-    return NO;
+- (void)willMoveToSuperview:(UIView *)newSuperview {
+    if (newSuperview != nil) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(animateViewsForTextEntry) name:UITextFieldTextDidBeginEditingNotification object:self];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(animateViewsForTextDisplay) name:UITextFieldTextDidEndEditingNotification object:self];
+    }
 }
 
 @end

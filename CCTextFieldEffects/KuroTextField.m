@@ -89,15 +89,6 @@ static CGPoint const textFieldInset = {6,0};
     return self;
 }
 
-# pragma mark - UITextFieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
 # pragma mark - Overridden methods
 - (void)drawRect:(CGRect)rect {
     UIBezierPath *leftPath = [UIBezierPath bezierPath];
@@ -133,7 +124,6 @@ static CGPoint const textFieldInset = {6,0};
     return  CGRectInset(newBounds, 1.5*borderThickness+textFieldInset.x, 1.5*borderThickness);
 }
 
-# pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     if (self.text.length == 0) {
         // Hide cursor when animating.
@@ -178,6 +168,7 @@ static CGPoint const textFieldInset = {6,0};
     }
 }
 
+# pragma mark - Private methods
 - (UIFont *)placeholderFontFromFont:(UIFont *)font {
     UIFont *smallerFont = [UIFont fontWithName:self.font.fontName size:self.font.pointSize*self.placeholderFontScale];
     

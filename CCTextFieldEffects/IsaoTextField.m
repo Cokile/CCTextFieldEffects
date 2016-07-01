@@ -99,16 +99,6 @@ static CGPoint const placeholderInsets = {6, 6};
     return CGRectInset(newBounds, textFieldInsets.x, 0);
 }
 
-#pragma mark - UITextFieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
-#pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     [self updateBorder];
     [self performPlacerholderAnimation];
@@ -124,6 +114,7 @@ static CGPoint const placeholderInsets = {6, 6};
     self.placeholderLabel.textColor = self.inactiveColor;
 }
 
+#pragma mark - Private methods
 - (void)updateBorder {
     self.borderLayer.frame = [self rectForBorderBounds:self.frame];
     self.borderLayer.backgroundColor = [self isFirstResponder]?self.activeColor.CGColor:self.inactiveColor.CGColor;

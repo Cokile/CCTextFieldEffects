@@ -102,16 +102,6 @@ static CGPoint const placeholderInset = {0, 6};
     return CGRectInset(newBounds, textFieldInset.x, textFieldInset.y);
 }
 
-#pragma mark - UITextFieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
-#pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     if (self.text.length == 0) {
         self.imageView.layer.transform = CATransform3DMakeRotation(M_PI, 0, 1, 0);
@@ -150,6 +140,7 @@ static CGPoint const placeholderInset = {0, 6};
     }
 }
 
+#pragma mark - Private methods
 - (UIFont *)placeholderFontFromFont:(UIFont *)font {
     UIFont *smallerFont = [UIFont fontWithName:font.fontName size:font.pointSize*self.placeholderFontScale];
     

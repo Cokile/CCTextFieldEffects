@@ -75,16 +75,6 @@ static CGPoint const textFieldInsets = {6 ,0};
     return CGRectInset(frame, textFieldInsets.x, textFieldInsets.y);
 }
 
-#pragma mark - UITextFieldDelegate
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
-    [self animateViewsForTextEntry];
-}
-
-- (void)textFieldDidEndEditing:(UITextField *)textField {
-    [self animateViewsForTextDisplay];
-}
-
-#pragma mark - Private methods
 - (void)animateViewsForTextEntry {
     if ([self isFirstResponder] && self.text.length == 0) {
         // Prevent cursor display in front of the container view when animating.
@@ -115,5 +105,7 @@ static CGPoint const textFieldInsets = {6 ,0};
         }];
     }
 }
+
+#pragma mark - Private methods
 
 @end
