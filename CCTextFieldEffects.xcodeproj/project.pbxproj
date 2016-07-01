@@ -23,6 +23,7 @@
 		B64D561E1D1DF4C700A9F7BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D561D1D1DF4C700A9F7BE /* AppDelegate.m */; };
 		B64D56211D1DF4C700A9F7BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64D56201D1DF4C700A9F7BE /* ViewController.m */; };
 		B64D56261D1DF4C700A9F7BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B64D56251D1DF4C700A9F7BE /* Assets.xcassets */; };
+		B66D29671D2671F900200CB1 /* KohanaTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D29661D2671F900200CB1 /* KohanaTextField.m */; };
 		B6935F481D21221900A6FD16 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = B6935F461D21221900A6FD16 /* mail.png */; };
 		B6935F491D21221900A6FD16 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = B6935F471D21221900A6FD16 /* user.png */; };
 		B6935F4D1D21FD3400A6FD16 /* HarukiTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6935F4C1D21FD3400A6FD16 /* HarukiTextField.m */; };
@@ -94,6 +95,8 @@
 		B64D562A1D1DF4C700A9F7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B64D562F1D1DF4C700A9F7BE /* CCTextFieldEffectsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCTextFieldEffectsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64D563A1D1DF4C700A9F7BE /* CCTextFieldEffectsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCTextFieldEffectsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66D29651D2671F900200CB1 /* KohanaTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KohanaTextField.h; sourceTree = "<group>"; };
+		B66D29661D2671F900200CB1 /* KohanaTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KohanaTextField.m; sourceTree = "<group>"; };
 		B6935F461D21221900A6FD16 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
 		B6935F471D21221900A6FD16 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		B6935F4B1D21FD3400A6FD16 /* HarukiTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HarukiTextField.h; sourceTree = "<group>"; };
@@ -297,6 +300,7 @@
 				B60B18BC1D2492F400619382 /* Manami */,
 				B60B18C01D24AE2A00619382 /* Nariko */,
 				B6C4BF441D2600BD00A5E1E4 /* Sae */,
+				B66D29641D2671DD00200CB1 /* Kohana */,
 			);
 			path = CCTextFieldEffects;
 			sourceTree = "<group>";
@@ -328,6 +332,15 @@
 				B64D56191D1DF4C700A9F7BE /* Supporting Files */,
 			);
 			path = CCTextFieldEffectsDemo;
+			sourceTree = "<group>";
+		};
+		B66D29641D2671DD00200CB1 /* Kohana */ = {
+			isa = PBXGroup;
+			children = (
+				B66D29651D2671F900200CB1 /* KohanaTextField.h */,
+				B66D29661D2671F900200CB1 /* KohanaTextField.m */,
+			);
+			name = Kohana;
 			sourceTree = "<group>";
 		};
 		B6935F4A1D21FD0100A6FD16 /* Haruki */ = {
@@ -545,6 +558,7 @@
 				B644A2EA1D20F9F000A887D2 /* HideoTextField.m in Sources */,
 				B64D56211D1DF4C700A9F7BE /* ViewController.m in Sources */,
 				B60B18BB1D23E8D600619382 /* ChisatoTextField.m in Sources */,
+				B66D29671D2671F900200CB1 /* KohanaTextField.m in Sources */,
 				B60B18B71D23CD9000619382 /* RuriTextField.m in Sources */,
 				B6B940AF1D1EB1A6000C66BC /* DetailViewController.m in Sources */,
 				B634FF631D1E4B6E0019D5E8 /* HoshiTextField.m in Sources */,

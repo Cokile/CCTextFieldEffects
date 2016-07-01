@@ -28,5 +28,6 @@
 #import "ManamiTextField.h"
 #import "NarikoTextField.h"
 #import "SaeTextField.h"
+#import "KohanaTextField.h"
 
 #endif

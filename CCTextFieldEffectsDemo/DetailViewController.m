@@ -176,15 +176,23 @@
         NarikoTextField *tf2 = [[NarikoTextField alloc] initWithFrame:self.lowFrame];
         tf2.placeholder = @"Last Name";
         [self.view addSubview:tf2];
-    }
-    
-    else if ([self.title isEqualToString:@"Sae"]) {
+    } else if ([self.title isEqualToString:@"Sae"]) {
         SaeTextField *tf1 = [[SaeTextField alloc] initWithFrame:CGRectInset(self.highFrame, 50, 0)];
         tf1.placeholder = @"First Name";
         [self.view addSubview:tf1];
         
         SaeTextField *tf2 = [[SaeTextField alloc] initWithFrame:CGRectInset(self.lowFrame, 50, 0)];
         tf2.placeholder = @"Last Name";
+        [self.view addSubview:tf2];
+    } else if ([self.title isEqualToString:@"Kohana"]) {
+        KohanaTextField *tf1 = [[KohanaTextField alloc] initWithFrame:self.highFrame];
+        tf1.placeholder = @"Mail";
+        tf1.image = [UIImage imageNamed:@"mail.png"];
+        [self.view addSubview:tf1];
+        
+        KohanaTextField *tf2 = [[KohanaTextField alloc] initWithFrame:self.lowFrame];
+        tf2.placeholder = @"User Name";
+        tf2.image = [UIImage imageNamed:@"user.png"];
         [self.view addSubview:tf2];
     }
 }
