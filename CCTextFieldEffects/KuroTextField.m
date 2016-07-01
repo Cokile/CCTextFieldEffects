@@ -65,7 +65,6 @@ static CGPoint const textFieldInset = {6,0};
     self = [super initWithFrame:frame];
 
     if (self) {
-        self.delegate = self;
         self.leftLayer = [[CAShapeLayer alloc] init];
         self.leftLayer.fillColor = [UIColor clearColor].CGColor;
         self.leftLayer.borderColor = self.leftLayer.fillColor;
