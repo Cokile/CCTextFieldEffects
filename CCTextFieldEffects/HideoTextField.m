@@ -95,7 +95,7 @@ static CGPoint const textFieldInsets = {6 ,0};
 - (void)animateViewsForTextDisplay {
     if (self.text.length == 0) {
         [UIView animateWithDuration:0.27 animations:^{
-            self.imageContainerView.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame)*0.22, CGRectGetHeight(self.imageContainerView.frame));
+            self.imageContainerView.frame = CGRectMake(0, 0, CGRectGetHeight(self.frame), CGRectGetHeight(self.imageContainerView.frame));
             self.imageView.transform = CGAffineTransformIdentity;
             self.imageView.center = self.imageContainerView.center;
         } completion:^(BOOL finished) {

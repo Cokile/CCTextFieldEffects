@@ -105,11 +105,11 @@ static CGPoint const placeholderInsets = {10, 5};
 
 - (void)animateViewsForTextEntry {
     [UIView animateWithDuration:0.16 animations:^{
-        self.placeholderLabel.frame = CGRectMake(CGRectGetWidth(self.frame)*0.65, placeholderInsets.y, CGRectGetWidth(self.placeholderLabel.frame), CGRectGetHeight(self.placeholderLabel.frame));
+        self.placeholderLabel.frame = CGRectMake(CGRectGetWidth(self.frame)*0.7, placeholderInsets.y, CGRectGetWidth(self.placeholderLabel.frame), CGRectGetHeight(self.placeholderLabel.frame));
     }];
     
     [UIView animateWithDuration:0.22 animations:^{
-        self.foregroundView.frame = CGRectMake(CGRectGetWidth(self.frame)*0.6, 0, CGRectGetWidth(self.foregroundView.frame), CGRectGetHeight(self.foregroundView.frame));
+        self.foregroundView.frame = CGRectMake(CGRectGetWidth(self.frame)*0.65, 0, CGRectGetWidth(self.foregroundView.frame), CGRectGetHeight(self.foregroundView.frame));
     } completion:^(BOOL finished) {
         if (self.didBeginEditingHandler != nil) {
             self.didBeginEditingHandler();
