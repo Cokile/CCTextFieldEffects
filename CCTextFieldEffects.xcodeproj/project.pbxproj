@@ -38,7 +38,6 @@
 		B6D308331D1DFAFD00C993C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D308321D1DFAFD00C993C3 /* main.m */; };
 		B6D308361D1DFB9100C993C3 /* CCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D308351D1DFB9100C993C3 /* CCTextField.m */; };
 		B6D308391D1E040900C993C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D308371D1E040900C993C3 /* Main.storyboard */; };
-		B6D3083C1D1E041700C993C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D3083A1D1E041700C993C3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,7 +119,6 @@
 		B6D308341D1DFB9100C993C3 /* CCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTextField.h; sourceTree = "<group>"; };
 		B6D308351D1DFB9100C993C3 /* CCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTextField.m; sourceTree = "<group>"; };
 		B6D308381D1E040900C993C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B6D3083B1D1E041700C993C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,7 +323,6 @@
 				B6B940AE1D1EB1A6000C66BC /* DetailViewController.m */,
 				B6B940B01D1EB23C000C66BC /* effects.json */,
 				B6D308371D1E040900C993C3 /* Main.storyboard */,
-				B6D3083A1D1E041700C993C3 /* LaunchScreen.storyboard */,
 				B64D56251D1DF4C700A9F7BE /* Assets.xcassets */,
 				B64D562A1D1DF4C700A9F7BE /* Info.plist */,
 				B64066DF1D210B6A00289FC4 /* Resources */,
@@ -476,7 +473,6 @@
 				TargetAttributes = {
 					B64D56151D1DF4C700A9F7BE = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 5B73F3N5VZ;
 					};
 					B64D562E1D1DF4C700A9F7BE = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -519,7 +515,6 @@
 				B6C4BF491D2600EC00A5E1E4 /* pencil.png in Resources */,
 				B6935F481D21221900A6FD16 /* mail.png in Resources */,
 				B6935F491D21221900A6FD16 /* user.png in Resources */,
-				B6D3083C1D1E041700C993C3 /* LaunchScreen.storyboard in Resources */,
 				B64D56261D1DF4C700A9F7BE /* Assets.xcassets in Resources */,
 				B6D308391D1E040900C993C3 /* Main.storyboard in Resources */,
 			);
@@ -610,14 +605,6 @@
 				B6D308381D1E040900C993C3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B6D3083A1D1E041700C993C3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6D3083B1D1E041700C993C3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

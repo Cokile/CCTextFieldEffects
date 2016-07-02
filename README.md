@@ -62,7 +62,7 @@ __Note:__
 
 - All the text fields are resigned from first responder by pressing the Return button in the keyboard.
 - CCTextFieldEffects requires ARC.
-- The best hight of the frame size is around 70.
+
 
 
 
@@ -77,6 +77,7 @@ __Note:__
 @property (strong, nonatomic) AkiraTextField *akiraTextField;
 
 //...
+// Recommended frame height is around 70.
 self.akiraTextField = [[AkiraTextField alloc] initWithFrame:<#CGRect#>];
 
 self.akiraTextField.placeholder = <#NSString#>;
@@ -124,6 +125,7 @@ self.akiraTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) HoshiTextField *hoshiTextField;
 
 //...
+// Recommended frame height is around 70.
 self.hoshiTextField = [[HoshiTextField alloc] initWithFrame:<#CGRect#>];
 
 self.hoshiTextField.placeholder = <#NSString#>;
@@ -173,6 +175,7 @@ self.hoshiTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) IsaoTextField *isaoTextField;
 
 //...
+// Recommended frame height is around 70.
 self.isaoTextField = [[IsaoTextField alloc] initWithFrame:<#CGRect#>];
 
 self.isaoTextField.placeholder = <#NSString#>;
@@ -220,6 +223,7 @@ self.isaoTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) JiroTextField *jiroTextField;
 
 //...
+// Recommended frame height is around 70.
 self.jiroTextField = [[JiroTextField alloc] initWithFrame:<#CGRect#>];
 
 self.jiroTextField.placeholder = <#NSString#>;
@@ -267,8 +271,11 @@ self.jiroTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) KaedeTextField *kaedeTextField;
 
 //...
+// Recommended frame height is around 56.
 self.kaedeTextField = [[kaedeTextField alloc] initWithFrame:<#CGRect#>];
 
+// The placeholder should not be too long,
+// or it will not be fulliy displayed after the text field obtains focus.
 self.kaedeTextField.placeholder = <#NSString#>;
 
 // The size of the placeholder label relative to the font size of the text field, default value is 0.8
@@ -317,6 +324,7 @@ self.kaedeTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) MadokaTextField *madokaTextField;
 
 //...
+// Recommended frame height is around 70.
 self.madokaTextField = [[MadokaTextField alloc] initWithFrame:<#CGRect#>];
 
 self.madokaTextField.placeholder = <#NSString#>;
@@ -364,6 +372,7 @@ self.madokaTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) YokoTextField *yokoTextField;
 
 //...
+// Recommended frame height is around 70.
 self.yokoTextField = [[YokoTextField alloc] initWithFrame:<#CGRect#>];
 
 self.yokoTextField.placeholder = <#NSString#>;
@@ -411,6 +420,7 @@ self.yokoTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) YoshikoTextField *yoshikoTextField;
 
 //...
+// Recommended frame height is around 70.
 self.yoshikoTextField = [[YoshikoTextField alloc] initWithFrame:<#CGRect#>];
 
 self.yoshikoTextField.placeholder = <#NSString#>;
@@ -465,6 +475,7 @@ self.yoshikoTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) HideoTextField *hideoTextField;
 
 //...
+// Recommended frame height is around 56.
 self.hideoTextField = [[HideoTextField alloc] initWithFrame:<#CGRect#>];
 
 self.hideoTextField.placeholder = <#NSString#>;
@@ -515,6 +526,7 @@ self.hideoTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) HarukiTextField *harukiTextField;
 
 //...
+// Recommended frame height is around 70.
 self.harukiTextField = [[HarukiTextField alloc] initWithFrame:<#CGRect#>];
 
 self.harukiTextField.placeholder = <#NSString#>;
@@ -562,6 +574,7 @@ self.harukiTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) MinoruTextField *minoruTextField;
 
 //...
+// Recommended frame height is around 70.
 self.minoruTextField = [[MinoruTextField alloc] initWithFrame:<#CGRect#>];
 
 self.minoruTextField.placeholder = <#NSString#>;
@@ -614,6 +627,7 @@ __Note:__ Since Kyo will add a overlay, to dismiss the keyboard, you should writ
 @property (strong, nonatomic) KyoTextField *kyoTextField;
 
 //...
+// Recommended frame height is around 70.
 self.kyoTextField = [[KyoTextField alloc] initWithFrame:<#CGRect#>];
 
 self.kyoTextField.placeholder = <#NSString#>;
@@ -664,6 +678,7 @@ self.kyoTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) KuroTextField *kuroTextField;
 
 //...
+// Recommended frame height is around 70.
 self.kuroTextField = [[KuroTextField alloc] initWithFrame:<#CGRect#>];
 
 self.kuroTextField.placeholder = <#NSString#>;
@@ -711,6 +726,7 @@ self.kuroTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) RuriTextField *ruriTextField;
 
 //...
+// Recommended frame height is around 70.
 self.ruriTextField = [[RuriTextField alloc] initWithFrame:<#CGRect#>];
 
 self.ruriTextField.placeholder = <#NSString#>;
@@ -761,6 +777,7 @@ self.ruriTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) ChisatoTextField *chisatoTextField;
 
 //...
+// Recommended frame height is around 70.
 self.chisatoTextField = [[ChisatoTextField alloc] initWithFrame:<#CGRect#>];
 
 self.chisatoTextField.placeholder = <#NSString#>;
@@ -811,6 +828,7 @@ self.chisatoTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) ManamiTextField *manamiTextField;
 
 //...
+// Recommended frame height is around 70.
 self.manamiTextField = [[ManamiTextField alloc] initWithFrame:<#CGRect#>];
 
 self.manamiTextField.placeholder = <#NSString#>;
@@ -861,6 +879,7 @@ self.manamiTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) NarikoTextField *narikoTextField;
 
 //...
+// Recommended frame height is around 70.
 self.narikoTextField = [[NarikoTextField alloc] initWithFrame:<#CGRect#>];
 
 self.narikoTextField.placeholder = <#NSString#>;
@@ -911,6 +930,8 @@ self.narikoTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) SaeTextField *saeTextField;
 
 //...
+// Recommended frame height is around 70.
+// Frame width should be shorter than other tpyes of text field.
 self.saeTextField = [[SaeTextField alloc] initWithFrame:<#CGRect#>];
 
 self.saeTextField.placeholder = <#NSString#>;
@@ -961,6 +982,7 @@ self.saeTextField.didEndEditingHandler = ^{
 @property (strong, nonatomic) KohanaTextField *kohanaTextField;
 
 //...
+// Recommended frame height is around 56.
 self.kohanaTextField = [[KohanaTextField alloc] initWithFrame:<#CGRect#>];
 
 self.kohanaTextField.placeholder = <#NSString#>;

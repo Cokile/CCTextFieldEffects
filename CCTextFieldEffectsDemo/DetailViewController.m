@@ -65,11 +65,11 @@
         tf2.placeholder = @"Last Name";
         [self.view addSubview:tf2];
     } else if ([self.title isEqualToString:@"Kaede"]) {
-        KaedeTextField *tf1 = [[KaedeTextField alloc] initWithFrame:self.highFrame];
+        KaedeTextField *tf1 = [[KaedeTextField alloc] initWithFrame:CGRectInset(self.highFrame, 0, 7)];
         tf1.placeholder = @"First Name";
         [self.view addSubview:tf1];
         
-        KaedeTextField *tf2 = [[KaedeTextField alloc] initWithFrame:self.lowFrame];
+        KaedeTextField *tf2 = [[KaedeTextField alloc] initWithFrame:CGRectInset(self.lowFrame, 0, 7)];
         tf2.placeholder = @"Last Name";
         [self.view addSubview:tf2];
     } else if ([self.title isEqualToString:@"Madoka"]) {
@@ -105,11 +105,11 @@
         tf2.placeholder = @"Last Name";
         [self.view addSubview:tf2];
     } else if ([self.title isEqualToString:@"Hideo"]) {
-        HideoTextField *tf1 = [[HideoTextField alloc] initWithFrame:self.highFrame];        
+        HideoTextField *tf1 = [[HideoTextField alloc] initWithFrame:CGRectInset(self.highFrame, 0, 7)];
         tf1.image = [UIImage imageNamed:@"mail.png"];
         [self.view addSubview:tf1];
         
-        HideoTextField *tf2 = [[HideoTextField alloc] initWithFrame:self.lowFrame];
+        HideoTextField *tf2 = [[HideoTextField alloc] initWithFrame:CGRectInset(self.lowFrame, 0, 7)];
         tf2.image = [UIImage imageNamed:@"user.png"];
         [self.view addSubview:tf2];
     } else if ([self.title isEqualToString:@"Haruki"]) {
@@ -177,20 +177,20 @@
         tf2.placeholder = @"Last Name";
         [self.view addSubview:tf2];
     } else if ([self.title isEqualToString:@"Sae"]) {
-        SaeTextField *tf1 = [[SaeTextField alloc] initWithFrame:CGRectInset(self.highFrame, 50, 0)];
+        SaeTextField *tf1 = [[SaeTextField alloc] initWithFrame:CGRectInset(self.highFrame, 80, 0)];
         tf1.placeholder = @"First Name";
         [self.view addSubview:tf1];
         
-        SaeTextField *tf2 = [[SaeTextField alloc] initWithFrame:CGRectInset(self.lowFrame, 50, 0)];
+        SaeTextField *tf2 = [[SaeTextField alloc] initWithFrame:CGRectInset(self.lowFrame, 80, 0)];
         tf2.placeholder = @"Last Name";
         [self.view addSubview:tf2];
     } else if ([self.title isEqualToString:@"Kohana"]) {
-        KohanaTextField *tf1 = [[KohanaTextField alloc] initWithFrame:self.highFrame];
+        KohanaTextField *tf1 = [[KohanaTextField alloc] initWithFrame:CGRectInset(self.highFrame, 0, 7)];
         tf1.placeholder = @"Mail";
         tf1.image = [UIImage imageNamed:@"mail.png"];
         [self.view addSubview:tf1];
         
-        KohanaTextField *tf2 = [[KohanaTextField alloc] initWithFrame:self.lowFrame];
+        KohanaTextField *tf2 = [[KohanaTextField alloc] initWithFrame:CGRectInset(self.lowFrame, 0, 7)];
         tf2.placeholder = @"User Name";
         tf2.image = [UIImage imageNamed:@"user.png"];
         [self.view addSubview:tf2];
