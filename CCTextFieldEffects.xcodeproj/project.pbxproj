@@ -35,6 +35,52 @@
 		B6B940B11D1EB23C000C66BC /* effects.json in Resources */ = {isa = PBXBuildFile; fileRef = B6B940B01D1EB23C000C66BC /* effects.json */; };
 		B6C4BF471D2600DB00A5E1E4 /* SaeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C4BF461D2600DB00A5E1E4 /* SaeTextField.m */; };
 		B6C4BF491D2600EC00A5E1E4 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C4BF481D2600EC00A5E1E4 /* pencil.png */; };
+		B6CFDCB31D277FE8002AC406 /* CCTextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6CFDCAC1D277FE7002AC406 /* CCTextFieldEffects.framework */; };
+		B6CFDCB41D277FE8002AC406 /* CCTextFieldEffects.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6CFDCAC1D277FE7002AC406 /* CCTextFieldEffects.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6CFDCCF1D278274002AC406 /* CCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D308351D1DFB9100C993C3 /* CCTextField.m */; };
+		B6CFDCD01D278274002AC406 /* AkiraTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B634FF5F1D1E109F0019D5E8 /* AkiraTextField.m */; };
+		B6CFDCD11D278274002AC406 /* HoshiTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B634FF621D1E4B6E0019D5E8 /* HoshiTextField.m */; };
+		B6CFDCD21D278274002AC406 /* IsaoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B940A71D1E7AAC000C66BC /* IsaoTextField.m */; };
+		B6CFDCD31D278274002AC406 /* JiroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B61010871D1F95FC002F562C /* JiroTextField.m */; };
+		B6CFDCD41D278274002AC406 /* KaedeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B610108B1D1FA556002F562C /* KaedeTextField.m */; };
+		B6CFDCD51D278274002AC406 /* MadokaTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B610108F1D1FB485002F562C /* MadokaTextField.m */; };
+		B6CFDCD61D278274002AC406 /* YokoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B61010931D1FC9B9002F562C /* YokoTextField.m */; };
+		B6CFDCD71D278274002AC406 /* YoshikoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B61010971D1FE431002F562C /* YoshikoTextField.m */; };
+		B6CFDCD81D278274002AC406 /* HideoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B644A2E91D20F9F000A887D2 /* HideoTextField.m */; };
+		B6CFDCD91D278274002AC406 /* HarukiTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6935F4C1D21FD3400A6FD16 /* HarukiTextField.m */; };
+		B6CFDCDA1D278274002AC406 /* MinoruTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6935F501D2229C800A6FD16 /* MinoruTextField.m */; };
+		B6CFDCDC1D278274002AC406 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B6935F531D22579B00A6FD16 /* PulsingHaloLayer.m */; };
+		B6CFDCDD1D278274002AC406 /* KyoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6935F571D226B1600A6FD16 /* KyoTextField.m */; };
+		B6CFDCDE1D278274002AC406 /* KuroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B615103B1D234DD9004425A9 /* KuroTextField.m */; };
+		B6CFDCDF1D278274002AC406 /* RuriTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B60B18B61D23CD9000619382 /* RuriTextField.m */; };
+		B6CFDCE01D278274002AC406 /* ChisatoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B60B18BA1D23E8D600619382 /* ChisatoTextField.m */; };
+		B6CFDCE11D278274002AC406 /* ManamiTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B60B18BE1D24931C00619382 /* ManamiTextField.m */; };
+		B6CFDCE21D278274002AC406 /* NarikoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B60B18C21D24AE4700619382 /* NarikoTextField.m */; };
+		B6CFDCE81D278665002AC406 /* SaeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C4BF461D2600DB00A5E1E4 /* SaeTextField.m */; };
+		B6CFDCE91D27866C002AC406 /* KohanaTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B66D29661D2671F900200CB1 /* KohanaTextField.m */; };
+		B6CFDCEA1D2786D8002AC406 /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C4BF481D2600EC00A5E1E4 /* pencil.png */; };
+		B6CFDCEB1D278765002AC406 /* CCTextFieldEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = B6CFDCAE1D277FE7002AC406 /* CCTextFieldEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCEE1D278853002AC406 /* CCTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D308341D1DFB9100C993C3 /* CCTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCEF1D278862002AC406 /* AkiraTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B634FF5E1D1E109F0019D5E8 /* AkiraTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCF01D278867002AC406 /* HoshiTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B634FF611D1E4B6E0019D5E8 /* HoshiTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCF11D27886B002AC406 /* IsaoTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B6B940A61D1E7AAC000C66BC /* IsaoTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCF21D278872002AC406 /* JiroTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B61010861D1F95FC002F562C /* JiroTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCF31D278876002AC406 /* KaedeTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B610108A1D1FA556002F562C /* KaedeTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCF41D27887B002AC406 /* MadokaTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B610108E1D1FB485002F562C /* MadokaTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCF51D27887F002AC406 /* YokoTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B61010921D1FC9B9002F562C /* YokoTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCF61D278884002AC406 /* YoshikoTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B61010961D1FE431002F562C /* YoshikoTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCF71D278892002AC406 /* HideoTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B644A2E81D20F9F000A887D2 /* HideoTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCF81D278897002AC406 /* HarukiTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B6935F4B1D21FD3400A6FD16 /* HarukiTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCF91D27889C002AC406 /* MinoruTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B6935F4F1D2229C800A6FD16 /* MinoruTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCFA1D27889F002AC406 /* PulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = B6935F521D22579B00A6FD16 /* PulsingHaloLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCFB1D2788A3002AC406 /* KyoTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B6935F561D226B1600A6FD16 /* KyoTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCFC1D2788A7002AC406 /* KuroTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B615103A1D234DD9004425A9 /* KuroTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCFD1D2788AC002AC406 /* RuriTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B60B18B51D23CD9000619382 /* RuriTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCFE1D2788B2002AC406 /* ChisatoTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B60B18B91D23E8D600619382 /* ChisatoTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDCFF1D2788B7002AC406 /* ManamiTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B60B18BD1D24931C00619382 /* ManamiTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDD001D2788BD002AC406 /* NarikoTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B60B18C11D24AE4700619382 /* NarikoTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDD011D2788C3002AC406 /* SaeTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C4BF451D2600DB00A5E1E4 /* SaeTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6CFDD021D2788C8002AC406 /* KohanaTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B66D29651D2671F900200CB1 /* KohanaTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B6D308331D1DFAFD00C993C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D308321D1DFAFD00C993C3 /* main.m */; };
 		B6D308361D1DFB9100C993C3 /* CCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D308351D1DFB9100C993C3 /* CCTextField.m */; };
 		B6D308391D1E040900C993C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D308371D1E040900C993C3 /* Main.storyboard */; };
@@ -55,7 +101,28 @@
 			remoteGlobalIDString = B64D56151D1DF4C700A9F7BE;
 			remoteInfo = CCTextFieldEffects;
 		};
+		B6CFDCB11D277FE8002AC406 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B64D560E1D1DF4C700A9F7BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6CFDCAB1D277FE7002AC406;
+			remoteInfo = CCTextFieldEffects;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B6CFDCB81D277FE8002AC406 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B6CFDCB41D277FE8002AC406 /* CCTextFieldEffects.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B60B18B51D23CD9000619382 /* RuriTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuriTextField.h; sourceTree = "<group>"; };
@@ -84,7 +151,7 @@
 		B634FF621D1E4B6E0019D5E8 /* HoshiTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HoshiTextField.m; sourceTree = "<group>"; };
 		B644A2E81D20F9F000A887D2 /* HideoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HideoTextField.h; sourceTree = "<group>"; };
 		B644A2E91D20F9F000A887D2 /* HideoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HideoTextField.m; sourceTree = "<group>"; };
-		B64D56161D1DF4C700A9F7BE /* CCTextFieldEffects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCTextFieldEffects.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64D56161D1DF4C700A9F7BE /* CCTextFieldEffectsSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCTextFieldEffectsSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64D561A1D1DF4C700A9F7BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CCTextFieldEffectsDemo/main.m; sourceTree = "<group>"; };
 		B64D561C1D1DF4C700A9F7BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B64D561D1D1DF4C700A9F7BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -108,13 +175,15 @@
 		B6935F571D226B1600A6FD16 /* KyoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KyoTextField.m; sourceTree = "<group>"; };
 		B6B940A61D1E7AAC000C66BC /* IsaoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsaoTextField.h; sourceTree = "<group>"; };
 		B6B940A71D1E7AAC000C66BC /* IsaoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IsaoTextField.m; sourceTree = "<group>"; };
-		B6B940AC1D1E7B48000C66BC /* CCTextFieldEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTextFieldEffects.h; sourceTree = "<group>"; };
 		B6B940AD1D1EB1A6000C66BC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B6B940AE1D1EB1A6000C66BC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		B6B940B01D1EB23C000C66BC /* effects.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = effects.json; sourceTree = "<group>"; };
 		B6C4BF451D2600DB00A5E1E4 /* SaeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaeTextField.h; sourceTree = "<group>"; };
 		B6C4BF461D2600DB00A5E1E4 /* SaeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaeTextField.m; sourceTree = "<group>"; };
 		B6C4BF481D2600EC00A5E1E4 /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
+		B6CFDCAC1D277FE7002AC406 /* CCTextFieldEffects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CCTextFieldEffects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6CFDCAE1D277FE7002AC406 /* CCTextFieldEffects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTextFieldEffects.h; sourceTree = "<group>"; };
+		B6CFDCB01D277FE8002AC406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6D308321D1DFAFD00C993C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = CCTextFieldEffectsDemo/main.m; sourceTree = "<group>"; };
 		B6D308341D1DFB9100C993C3 /* CCTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTextField.h; sourceTree = "<group>"; };
 		B6D308351D1DFB9100C993C3 /* CCTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTextField.m; sourceTree = "<group>"; };
@@ -126,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CFDCB31D277FE8002AC406 /* CCTextFieldEffects.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +207,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B64D56371D1DF4C700A9F7BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6CFDCA81D277FE7002AC406 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,7 +336,7 @@
 			children = (
 				B6D308321D1DFAFD00C993C3 /* main.m */,
 				B64D564C1D1DF55500A9F7BE /* CCTextFieldEffectsDemo */,
-				B64D56181D1DF4C700A9F7BE /* CCTextFieldEffects */,
+				B6CFDCAD1D277FE7002AC406 /* CCTextFieldEffects */,
 				B64D56171D1DF4C700A9F7BE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -267,40 +344,12 @@
 		B64D56171D1DF4C700A9F7BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B64D56161D1DF4C700A9F7BE /* CCTextFieldEffects.app */,
+				B64D56161D1DF4C700A9F7BE /* CCTextFieldEffectsSample.app */,
 				B64D562F1D1DF4C700A9F7BE /* CCTextFieldEffectsTests.xctest */,
 				B64D563A1D1DF4C700A9F7BE /* CCTextFieldEffectsUITests.xctest */,
+				B6CFDCAC1D277FE7002AC406 /* CCTextFieldEffects.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		B64D56181D1DF4C700A9F7BE /* CCTextFieldEffects */ = {
-			isa = PBXGroup;
-			children = (
-				B6B940AC1D1E7B48000C66BC /* CCTextFieldEffects.h */,
-				B6D308341D1DFB9100C993C3 /* CCTextField.h */,
-				B6D308351D1DFB9100C993C3 /* CCTextField.m */,
-				B6B940A91D1E7AC2000C66BC /* Akira */,
-				B6B940AA1D1E7ADA000C66BC /* Hoshi */,
-				B6B940AB1D1E7AFE000C66BC /* Isao */,
-				B61010851D1F95BE002F562C /* Jiro */,
-				B61010891D1FA537002F562C /* Kaede */,
-				B610108D1D1FB469002F562C /* Madoka */,
-				B61010911D1FC989002F562C /* Yoko */,
-				B61010951D1FE3D2002F562C /* Yoshiko */,
-				B644A2E71D20F9BB00A887D2 /* Hideo */,
-				B6935F4A1D21FD0100A6FD16 /* Haruki */,
-				B6935F4E1D22299D00A6FD16 /* Minoru */,
-				B6935F551D226AF400A6FD16 /* Kyo */,
-				B61510391D234DB7004425A9 /* Kuro */,
-				B60B18B41D23CD6D00619382 /* Ruri */,
-				B60B18B81D23E8A000619382 /* Chisato */,
-				B60B18BC1D2492F400619382 /* Manami */,
-				B60B18C01D24AE2A00619382 /* Nariko */,
-				B6C4BF441D2600BD00A5E1E4 /* Sae */,
-				B66D29641D2671DD00200CB1 /* Kohana */,
-			);
-			path = CCTextFieldEffects;
 			sourceTree = "<group>";
 		};
 		B64D56191D1DF4C700A9F7BE /* Supporting Files */ = {
@@ -406,24 +455,88 @@
 			name = Sae;
 			sourceTree = "<group>";
 		};
+		B6CFDCAD1D277FE7002AC406 /* CCTextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				B6CFDCB01D277FE8002AC406 /* Info.plist */,
+				B6CFDCAE1D277FE7002AC406 /* CCTextFieldEffects.h */,
+				B6D308341D1DFB9100C993C3 /* CCTextField.h */,
+				B6D308351D1DFB9100C993C3 /* CCTextField.m */,
+				B6B940A91D1E7AC2000C66BC /* Akira */,
+				B6B940AA1D1E7ADA000C66BC /* Hoshi */,
+				B6B940AB1D1E7AFE000C66BC /* Isao */,
+				B61010851D1F95BE002F562C /* Jiro */,
+				B61010891D1FA537002F562C /* Kaede */,
+				B610108D1D1FB469002F562C /* Madoka */,
+				B61010911D1FC989002F562C /* Yoko */,
+				B61010951D1FE3D2002F562C /* Yoshiko */,
+				B644A2E71D20F9BB00A887D2 /* Hideo */,
+				B6935F4A1D21FD0100A6FD16 /* Haruki */,
+				B6935F4E1D22299D00A6FD16 /* Minoru */,
+				B6935F551D226AF400A6FD16 /* Kyo */,
+				B61510391D234DB7004425A9 /* Kuro */,
+				B60B18B41D23CD6D00619382 /* Ruri */,
+				B60B18B81D23E8A000619382 /* Chisato */,
+				B60B18BC1D2492F400619382 /* Manami */,
+				B60B18C01D24AE2A00619382 /* Nariko */,
+				B6C4BF441D2600BD00A5E1E4 /* Sae */,
+				B66D29641D2671DD00200CB1 /* Kohana */,
+			);
+			path = CCTextFieldEffects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B6CFDCA91D277FE7002AC406 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6CFDCEB1D278765002AC406 /* CCTextFieldEffects.h in Headers */,
+				B6CFDCEE1D278853002AC406 /* CCTextField.h in Headers */,
+				B6CFDCEF1D278862002AC406 /* AkiraTextField.h in Headers */,
+				B6CFDCF01D278867002AC406 /* HoshiTextField.h in Headers */,
+				B6CFDCF11D27886B002AC406 /* IsaoTextField.h in Headers */,
+				B6CFDCF21D278872002AC406 /* JiroTextField.h in Headers */,
+				B6CFDCF31D278876002AC406 /* KaedeTextField.h in Headers */,
+				B6CFDCF41D27887B002AC406 /* MadokaTextField.h in Headers */,
+				B6CFDCF51D27887F002AC406 /* YokoTextField.h in Headers */,
+				B6CFDCF61D278884002AC406 /* YoshikoTextField.h in Headers */,
+				B6CFDCF71D278892002AC406 /* HideoTextField.h in Headers */,
+				B6CFDCF81D278897002AC406 /* HarukiTextField.h in Headers */,
+				B6CFDCF91D27889C002AC406 /* MinoruTextField.h in Headers */,
+				B6CFDCFA1D27889F002AC406 /* PulsingHaloLayer.h in Headers */,
+				B6CFDCFB1D2788A3002AC406 /* KyoTextField.h in Headers */,
+				B6CFDCFC1D2788A7002AC406 /* KuroTextField.h in Headers */,
+				B6CFDCFD1D2788AC002AC406 /* RuriTextField.h in Headers */,
+				B6CFDCFE1D2788B2002AC406 /* ChisatoTextField.h in Headers */,
+				B6CFDCFF1D2788B7002AC406 /* ManamiTextField.h in Headers */,
+				B6CFDD001D2788BD002AC406 /* NarikoTextField.h in Headers */,
+				B6CFDD011D2788C3002AC406 /* SaeTextField.h in Headers */,
+				B6CFDD021D2788C8002AC406 /* KohanaTextField.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		B64D56151D1DF4C700A9F7BE /* CCTextFieldEffects */ = {
+		B64D56151D1DF4C700A9F7BE /* CCTextFieldEffectsSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B64D56431D1DF4C700A9F7BE /* Build configuration list for PBXNativeTarget "CCTextFieldEffects" */;
+			buildConfigurationList = B64D56431D1DF4C700A9F7BE /* Build configuration list for PBXNativeTarget "CCTextFieldEffectsSample" */;
 			buildPhases = (
 				B64D56121D1DF4C700A9F7BE /* Sources */,
 				B64D56131D1DF4C700A9F7BE /* Frameworks */,
 				B64D56141D1DF4C700A9F7BE /* Resources */,
+				B6CFDCB81D277FE8002AC406 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B6CFDCB21D277FE8002AC406 /* PBXTargetDependency */,
 			);
-			name = CCTextFieldEffects;
+			name = CCTextFieldEffectsSample;
 			productName = CCTextFieldEffects;
-			productReference = B64D56161D1DF4C700A9F7BE /* CCTextFieldEffects.app */;
+			productReference = B64D56161D1DF4C700A9F7BE /* CCTextFieldEffectsSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B64D562E1D1DF4C700A9F7BE /* CCTextFieldEffectsTests */ = {
@@ -462,6 +575,24 @@
 			productReference = B64D563A1D1DF4C700A9F7BE /* CCTextFieldEffectsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B6CFDCAB1D277FE7002AC406 /* CCTextFieldEffects */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6CFDCB51D277FE8002AC406 /* Build configuration list for PBXNativeTarget "CCTextFieldEffects" */;
+			buildPhases = (
+				B6CFDCA71D277FE7002AC406 /* Sources */,
+				B6CFDCA81D277FE7002AC406 /* Frameworks */,
+				B6CFDCA91D277FE7002AC406 /* Headers */,
+				B6CFDCAA1D277FE7002AC406 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CCTextFieldEffects;
+			productName = CCTextFieldEffects;
+			productReference = B6CFDCAC1D277FE7002AC406 /* CCTextFieldEffects.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -484,6 +615,9 @@
 						DevelopmentTeam = 5B73F3N5VZ;
 						TestTargetID = B64D56151D1DF4C700A9F7BE;
 					};
+					B6CFDCAB1D277FE7002AC406 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 				};
 			};
 			buildConfigurationList = B64D56111D1DF4C700A9F7BE /* Build configuration list for PBXProject "CCTextFieldEffects" */;
@@ -499,9 +633,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B64D56151D1DF4C700A9F7BE /* CCTextFieldEffects */,
+				B64D56151D1DF4C700A9F7BE /* CCTextFieldEffectsSample */,
 				B64D562E1D1DF4C700A9F7BE /* CCTextFieldEffectsTests */,
 				B64D56391D1DF4C700A9F7BE /* CCTextFieldEffectsUITests */,
+				B6CFDCAB1D277FE7002AC406 /* CCTextFieldEffects */,
 			);
 		};
 /* End PBXProject section */
@@ -531,6 +666,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6CFDCAA1D277FE7002AC406 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6CFDCEA1D2786D8002AC406 /* pencil.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,18 +726,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B6CFDCA71D277FE7002AC406 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6CFDCE91D27866C002AC406 /* KohanaTextField.m in Sources */,
+				B6CFDCE81D278665002AC406 /* SaeTextField.m in Sources */,
+				B6CFDCCF1D278274002AC406 /* CCTextField.m in Sources */,
+				B6CFDCD01D278274002AC406 /* AkiraTextField.m in Sources */,
+				B6CFDCD11D278274002AC406 /* HoshiTextField.m in Sources */,
+				B6CFDCD21D278274002AC406 /* IsaoTextField.m in Sources */,
+				B6CFDCD31D278274002AC406 /* JiroTextField.m in Sources */,
+				B6CFDCD41D278274002AC406 /* KaedeTextField.m in Sources */,
+				B6CFDCD51D278274002AC406 /* MadokaTextField.m in Sources */,
+				B6CFDCD61D278274002AC406 /* YokoTextField.m in Sources */,
+				B6CFDCD71D278274002AC406 /* YoshikoTextField.m in Sources */,
+				B6CFDCD81D278274002AC406 /* HideoTextField.m in Sources */,
+				B6CFDCD91D278274002AC406 /* HarukiTextField.m in Sources */,
+				B6CFDCDA1D278274002AC406 /* MinoruTextField.m in Sources */,
+				B6CFDCDC1D278274002AC406 /* PulsingHaloLayer.m in Sources */,
+				B6CFDCDD1D278274002AC406 /* KyoTextField.m in Sources */,
+				B6CFDCDE1D278274002AC406 /* KuroTextField.m in Sources */,
+				B6CFDCDF1D278274002AC406 /* RuriTextField.m in Sources */,
+				B6CFDCE01D278274002AC406 /* ChisatoTextField.m in Sources */,
+				B6CFDCE11D278274002AC406 /* ManamiTextField.m in Sources */,
+				B6CFDCE21D278274002AC406 /* NarikoTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		B64D56311D1DF4C700A9F7BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B64D56151D1DF4C700A9F7BE /* CCTextFieldEffects */;
+			target = B64D56151D1DF4C700A9F7BE /* CCTextFieldEffectsSample */;
 			targetProxy = B64D56301D1DF4C700A9F7BE /* PBXContainerItemProxy */;
 		};
 		B64D563C1D1DF4C700A9F7BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B64D56151D1DF4C700A9F7BE /* CCTextFieldEffects */;
+			target = B64D56151D1DF4C700A9F7BE /* CCTextFieldEffectsSample */;
 			targetProxy = B64D563B1D1DF4C700A9F7BE /* PBXContainerItemProxy */;
+		};
+		B6CFDCB21D277FE8002AC406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6CFDCAB1D277FE7002AC406 /* CCTextFieldEffects */;
+			targetProxy = B6CFDCB11D277FE8002AC406 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -766,6 +942,50 @@
 			};
 			name = Release;
 		};
+		B6CFDCB61D277FE8002AC406 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CCTextFieldEffects/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Cokile.CCTextFieldEffects;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B6CFDCB71D277FE8002AC406 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CCTextFieldEffects/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Cokile.CCTextFieldEffects;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -778,7 +998,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B64D56431D1DF4C700A9F7BE /* Build configuration list for PBXNativeTarget "CCTextFieldEffects" */ = {
+		B64D56431D1DF4C700A9F7BE /* Build configuration list for PBXNativeTarget "CCTextFieldEffectsSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B64D56441D1DF4C700A9F7BE /* Debug */,
@@ -804,6 +1024,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B6CFDCB51D277FE8002AC406 /* Build configuration list for PBXNativeTarget "CCTextFieldEffects" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6CFDCB61D277FE8002AC406 /* Debug */,
+				B6CFDCB71D277FE8002AC406 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
