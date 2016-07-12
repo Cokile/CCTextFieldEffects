@@ -1,7 +1,9 @@
-## TextFieldEffects
+## CCTextFieldEffects
 
 [![](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Cokile/CCTextFieldEffects/blob/master/Licence)
 [![](https://img.shields.io/github/release/Cokile/CCTextFieldEffects.svg)](https://github.com/Cokile/CCTextFieldEffects/releases)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CCTextFieldEffects.svg)](https://img.shields.io/cocoapods/v/CCTextFieldEffects.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Custom UITextFields effects inspired by [Codrops](http://tympanus.net/Development/TextInputEffects/index.html), which can be used as a simple replacement for `UITextField`. Original effects were built by [Raul Riera](https://github.com/raulriera) using Swift, but ported to Objective-C.
 
@@ -39,9 +41,14 @@ It now supports
 
 ### CocoaPods
 
-Simply add one line to your Podfile:
 ```ruby
 pod 'CCTextFieldEffects'
+```
+
+### Carthage
+
+```ruby
+github "Cokile/CCTextFieldEffects"
 ```
 
 ### Manual

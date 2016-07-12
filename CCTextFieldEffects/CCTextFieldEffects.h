@@ -2,32 +2,39 @@
 //  CCTextFieldEffects.h
 //  CCTextFieldEffects
 //
-//  Created by Kelvin on 6/25/16.
+//  Created by Kelvin on 7/2/16.
 //  Copyright © 2016 Cokile. All rights reserved.
 //
 
-#ifndef CCTextFieldEffects_h
-#define CCTextFieldEffects_h
-
 #import <UIKit/UIKit.h>
-#import "AkiraTextField.h"
-#import "HoshiTextField.h"
-#import "IsaoTextField.h"
-#import "JiroTextField.h"
-#import "KaedeTextField.h"
-#import "MadokaTextField.h"
-#import "YokoTextField.h"
-#import "YoshikoTextField.h"
-#import "HideoTextField.h"
-#import "HarukiTextField.h"
-#import "MinoruTextField.h"
-#import "KyoTextField.h"
-#import "KuroTextField.h"
-#import "RuriTextField.h"
-#import "ChisatoTextField.h"
-#import "ManamiTextField.h"
-#import "NarikoTextField.h"
-#import "SaeTextField.h"
-#import "KohanaTextField.h"
 
-#endif
+//! Project version number for CCTextFieldEffects.
+FOUNDATION_EXPORT double CCTextFieldEffectsVersionNumber;
+
+//! Project version string for CCTextFieldEffects.
+FOUNDATION_EXPORT const unsigned char CCTextFieldEffectsVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <CCTextFieldEffects/PublicHeader.h>
+
+#import <CCTextFieldEffects/CCTextField.h>
+#import <CCTextFieldEffects/AkiraTextField.h>
+#import <CCTextFieldEffects/HoshiTextField.h>
+#import <CCTextFieldEffects/IsaoTextField.h>
+#import <CCTextFieldEffects/JiroTextField.h>
+#import <CCTextFieldEffects/KaedeTextField.h>
+#import <CCTextFieldEffects/MadokaTextField.h>
+#import <CCTextFieldEffects/YokoTextField.h>
+#import <CCTextFieldEffects/YoshikoTextField.h>
+#import <CCTextFieldEffects/HideoTextField.h>
+#import <CCTextFieldEffects/HarukiTextField.h>
+#import <CCTextFieldEffects/MinoruTextField.h>
+#import <CCTextFieldEffects/KyoTextField.h>
+#import <CCTextFieldEffects/KuroTextField.h>
+#import <CCTextFieldEffects/RuriTextField.h>
+#import <CCTextFieldEffects/ChisatoTextField.h>
+#import <CCTextFieldEffects/ManamiTextField.h>
+#import <CCTextFieldEffects/NarikoTextField.h>
+#import <CCTextFieldEffects/SaeTextField.h>
+#import <CCTextFieldEffects/KohanaTextField.h>
+
+#import <CCTextFieldEffects/PulsingHaloLayer.h>
