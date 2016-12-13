@@ -67,22 +67,34 @@ static CGPoint const placeholderInsets = {0, 6};
     self = [super initWithFrame:frame];
     
     if (self) {
-        self.inactiveBorderLayer = [[CALayer alloc] init];
-        self.activeBorderLayer = [[CALayer alloc] init];
-        self.placeholderLabel = [[UILabel alloc] init];
-        
-        
-        self.borderInactiveColor = [UIColor colorWithRed:0.7255 green:0.7569 blue:0.7922 alpha:1.0];
-        self.borderActiveColor = [UIColor colorWithRed:0.4157 green:0.4745 blue:0.5373 alpha:1.0];
-        self.placeholderColor = self.borderInactiveColor;
-        self.cursorColor = [UIColor colorWithRed:0.349 green:0.3725 blue:0.4314 alpha:1.0];
-        self.textColor = [UIColor colorWithRed:0.2785 green:0.2982 blue:0.3559 alpha:1.0];
-        
-        self.placeholderFontScale = 0.65;
-        self.activePlaceholderPoint = CGPointZero;
+        [self commonInit];
     }
     
     return self;
+}
+
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void) commonInit {
+    self.inactiveBorderLayer = [[CALayer alloc] init];
+    self.activeBorderLayer = [[CALayer alloc] init];
+    self.placeholderLabel = [[UILabel alloc] init];    
+    
+    self.borderInactiveColor = [UIColor colorWithRed:0.7255 green:0.7569 blue:0.7922 alpha:1.0];
+    self.borderActiveColor = [UIColor colorWithRed:0.4157 green:0.4745 blue:0.5373 alpha:1.0];
+    self.placeholderColor = self.borderInactiveColor;
+    self.cursorColor = [UIColor colorWithRed:0.349 green:0.3725 blue:0.4314 alpha:1.0];
+    self.textColor = [UIColor colorWithRed:0.2785 green:0.2982 blue:0.3559 alpha:1.0];
+    
+    self.placeholderFontScale = 0.65;
+    self.activePlaceholderPoint = CGPointZero;
 }
 
 #pragma mark - Overridden methods

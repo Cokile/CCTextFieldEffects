@@ -71,26 +71,39 @@ static CGPoint const shadowInsets = {7, 8};
     self = [super initWithFrame:frame];
     
     if (self) {
-        self.borderLayer = [[CALayer alloc] init];
-        self.placeholderLabel = [[UILabel alloc] init];
-        
-        self.placeholderColor = [UIColor colorWithRed:0.4157 green:0.4745 blue:0.5373 alpha:1];
-        self.backgroundColor = [UIColor whiteColor];
-        self.borderColor = [UIColor colorWithRed:0.9255 green:0.6353 blue:0.6078 alpha:1];
-        self.cursorColor = [UIColor colorWithRed:0.9255 green:0.6353 blue:0.6078 alpha:1];
-        self.textColor = self.cursorColor;
-        
-        self.halo = [PulsingHaloLayer layer];
-        self.halo.repeatCount = 1;
-        self.halo.animationDuration = 0.4;
-        self.halo.radius = CGRectGetHeight(frame);
-        self.halo.backgroundColor = self.borderColor.CGColor;
-        [self.layer addSublayer:self.halo];
-        
-        self.placeholderFontScale = 0.65;
+        [self commonInit];
     }
     
     return self;
+}
+
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void) commonInit {
+    self.borderLayer = [[CALayer alloc] init];
+    self.placeholderLabel = [[UILabel alloc] init];
+    
+    self.placeholderColor = [UIColor colorWithRed:0.4157 green:0.4745 blue:0.5373 alpha:1];
+    self.backgroundColor = [UIColor whiteColor];
+    self.borderColor = [UIColor colorWithRed:0.9255 green:0.6353 blue:0.6078 alpha:1];
+    self.cursorColor = [UIColor colorWithRed:0.9255 green:0.6353 blue:0.6078 alpha:1];
+    self.textColor = self.cursorColor;
+    
+    self.halo = [PulsingHaloLayer layer];
+    self.halo.repeatCount = 1;
+    self.halo.animationDuration = 0.4;
+    self.halo.radius = 0;
+    self.halo.backgroundColor = self.borderColor.CGColor;
+    [self.layer addSublayer:self.halo];
+    
+    self.placeholderFontScale = 0.65;
 }
 
 #pragma mark - Overridden methods
@@ -105,6 +118,12 @@ static CGPoint const shadowInsets = {7, 8};
     
     [self.layer addSublayer:self.borderLayer];
     [self addSubview:self.placeholderLabel];
+}
+
+- (void) layoutSubviews {
+    [super layoutSubviews];
+    
+    self.halo.radius = CGRectGetHeight(self.bounds);
 }
 
 - (CGRect)editingRectForBounds:(CGRect)bounds {

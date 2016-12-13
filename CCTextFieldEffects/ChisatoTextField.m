@@ -62,19 +62,32 @@ static CGPoint const placeHolderInsets = {8, 0};
     self = [super initWithFrame:frame];
     
     if (self) {
-        self.borderLayer = [[CALayer alloc] init];
-        self.placeholderLabel = [[UILabel alloc] init];
-        
-        self.borderColor = [UIColor colorWithRed:0.7098 green:0.7098 blue:0.7098 alpha:1.0];
-        self.placeholderColor = self.borderColor;
-        self.cursorColor = self.borderColor;
-        self.textColor = self.borderColor;
-        self.activeColor = [UIColor colorWithRed:0.8549 green:0.3922 blue:0.5176 alpha:1];
-        
-        self.placeholderFontScale = 0.8;
+        [self commonInit];
     }
     
     return self;
+}
+
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void) commonInit {
+    self.borderLayer = [[CALayer alloc] init];
+    self.placeholderLabel = [[UILabel alloc] init];
+    
+    self.borderColor = [UIColor colorWithRed:0.7098 green:0.7098 blue:0.7098 alpha:1.0];
+    self.placeholderColor = self.borderColor;
+    self.cursorColor = self.borderColor;
+    self.textColor = self.borderColor;
+    self.activeColor = [UIColor colorWithRed:0.8549 green:0.3922 blue:0.5176 alpha:1];
+    
+    self.placeholderFontScale = 0.8;
 }
 
 #pragma mark - Overridden methods

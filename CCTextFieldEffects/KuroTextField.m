@@ -63,29 +63,42 @@ static CGPoint const textFieldInset = {6,0};
 # pragma mark - Lifecycle
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-
+    
     if (self) {
-        self.leftLayer = [[CAShapeLayer alloc] init];
-        self.leftLayer.fillColor = [UIColor clearColor].CGColor;
-        self.leftLayer.borderColor = self.leftLayer.fillColor;
-        self.leftLayer.lineWidth = borderThickness;
-        
-        self.rightLayer = [[CAShapeLayer alloc] init];
-        self.rightLayer.fillColor = [UIColor clearColor].CGColor;
-        self.rightLayer.borderColor = self.rightLayer.fillColor;
-        self.rightLayer.lineWidth = borderThickness;
-        
-        self.placeholderLabel = [[UILabel alloc] init];        
-        
-        self.borderColor = [UIColor colorWithRed:0.4549 green:0.4745 blue:0.5059 alpha:1];
-        self.placeholderColor = [UIColor colorWithRed:0.8745 green:0.3961 blue:0.5373 alpha:1];
-        self.cursorColor = [UIColor colorWithRed:0.5686 green:0.5882 blue:0.6314 alpha:1];
-        self.textColor = self.cursorColor;
-        
-        self.placeholderFontScale = 0.85;
+        [self commonInit];
     }
     
     return self;
+}
+
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void) commonInit {
+    self.leftLayer = [[CAShapeLayer alloc] init];
+    self.leftLayer.fillColor = [UIColor clearColor].CGColor;
+    self.leftLayer.borderColor = self.leftLayer.fillColor;
+    self.leftLayer.lineWidth = borderThickness;
+    
+    self.rightLayer = [[CAShapeLayer alloc] init];
+    self.rightLayer.fillColor = [UIColor clearColor].CGColor;
+    self.rightLayer.borderColor = self.rightLayer.fillColor;
+    self.rightLayer.lineWidth = borderThickness;
+    
+    self.placeholderLabel = [[UILabel alloc] init];
+    
+    self.borderColor = [UIColor colorWithRed:0.4549 green:0.4745 blue:0.5059 alpha:1];
+    self.placeholderColor = [UIColor colorWithRed:0.8745 green:0.3961 blue:0.5373 alpha:1];
+    self.cursorColor = [UIColor colorWithRed:0.5686 green:0.5882 blue:0.6314 alpha:1];
+    self.textColor = self.cursorColor;
+    
+    self.placeholderFontScale = 0.85;
 }
 
 # pragma mark - Overridden methods
