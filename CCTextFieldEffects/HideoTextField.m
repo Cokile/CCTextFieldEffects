@@ -38,19 +38,32 @@ static CGPoint const textFieldInsets = {6 ,0};
     self = [super initWithFrame:frame];
     
     if (self) {
-        self.imageContainerView = [[UIView alloc] init];
-        self.imageView = [[UIImageView alloc] init];
-        
-        self.imageContainerColor = [UIColor colorWithRed:0.5373 green:0.6157 blue:0.8549 alpha:1.0];
-        self.imageView.backgroundColor = [UIColor clearColor];
-        self.backgroundColor = [UIColor whiteColor];
-        self.cursorColor = [UIColor colorWithRed:0.6667 green:0.6667 blue:0.6667 alpha:1.0];
-        self.textColor = self.cursorColor;
-        
-        self.imageScale = 0.7;
+        [self commonInit];
     }
     
     return self;
+}
+
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void) commonInit {
+    self.imageContainerView = [[UIView alloc] init];
+    self.imageView = [[UIImageView alloc] init];
+    
+    self.imageContainerColor = [UIColor colorWithRed:0.5373 green:0.6157 blue:0.8549 alpha:1.0];
+    self.imageView.backgroundColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor whiteColor];
+    self.cursorColor = [UIColor colorWithRed:0.6667 green:0.6667 blue:0.6667 alpha:1.0];
+    self.textColor = self.cursorColor;
+    
+    self.imageScale = 0.7;
 }
 
 #pragma mark - Overridden methods

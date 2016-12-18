@@ -59,21 +59,34 @@ static CGPoint const placeholderInset = {0, 6};
     self = [super initWithFrame:frame];
     
     if (self) {
-        self.imageView = [[UIImageView alloc] init];
-        self.borderView = [[UIView alloc] init];
-        self.placeholderLabel = [[UILabel alloc] init];
-        
-        self.borderColor  = [UIColor colorWithRed:1 green:1 blue:1 alpha:1];
-        self.placeholderColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
-        self.cursorColor = self.borderColor;
-        self.textColor = self.cursorColor;
-        
-        self.image = [UIImage imageNamed:@"pencil.png"];
-        
-        self.placeholderFontScale = 0.8;
+        [self commonInit];
     }
     
     return self;
+}
+
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void) commonInit {
+    self.imageView = [[UIImageView alloc] init];
+    self.borderView = [[UIView alloc] init];
+    self.placeholderLabel = [[UILabel alloc] init];
+    
+    self.borderColor  = [UIColor colorWithRed:1 green:1 blue:1 alpha:1];
+    self.placeholderColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
+    self.cursorColor = self.borderColor;
+    self.textColor = self.cursorColor;
+    
+    self.image = [UIImage imageNamed:@"pencil.png"];
+    
+    self.placeholderFontScale = 0.8;
 }
 
 #pragma mark - Overridden methods

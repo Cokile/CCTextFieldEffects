@@ -59,23 +59,36 @@ static CGPoint const placeHolderInsets = {8, 0};
     self = [super initWithFrame:frame];
     
     if (self) {
-        self.upperLayer = [[CALayer alloc] init];
-        self.upperLayer.borderWidth = borderSize;
-        
-        self.lowerLayer = [[CALayer alloc] init];
-        self.lowerLayer.borderWidth = borderSize;
-        
-        self.placeholderLabel = [[UILabel alloc] init];
-        
-        self.borderColor = [UIColor colorWithRed:0.4147 green:0.4745 blue:0.5373 alpha:1];
-        self.placeholderColor = self.borderColor;
-        self.cursorColor = [UIColor colorWithRed:0.6863 green:0.7098 blue:0.7333 alpha:1];
-        self.textColor = self.cursorColor;
-        
-        self.placeholderFontScale = 0.75;
+        [self commonInit];
     }
     
     return self;
+}
+
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void) commonInit {
+    self.upperLayer = [[CALayer alloc] init];
+    self.upperLayer.borderWidth = borderSize;
+    
+    self.lowerLayer = [[CALayer alloc] init];
+    self.lowerLayer.borderWidth = borderSize;
+    
+    self.placeholderLabel = [[UILabel alloc] init];
+    
+    self.borderColor = [UIColor colorWithRed:0.4147 green:0.4745 blue:0.5373 alpha:1];
+    self.placeholderColor = self.borderColor;
+    self.cursorColor = [UIColor colorWithRed:0.6863 green:0.7098 blue:0.7333 alpha:1];
+    self.textColor = self.cursorColor;
+    
+    self.placeholderFontScale = 0.75;
 }
 
 #pragma mark - Overridden methods

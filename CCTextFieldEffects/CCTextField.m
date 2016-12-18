@@ -28,6 +28,13 @@
     return self;
 }
 
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+    if ((self = [super initWithCoder:aDecoder])) {
+        self.font = [UIFont boldSystemFontOfSize:self.font.pointSize];
+    }
+    return self;
+}
+
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }

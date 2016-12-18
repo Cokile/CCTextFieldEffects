@@ -56,19 +56,32 @@ static CGPoint const placeholderInsets = {10, 5};
     self = [super initWithFrame:frame];
     
     if (self) {
-        self.foregroundView = [[UIView alloc] init];
-        self.placeholderLabel = [[UILabel alloc] init];
-        
-        self.placeholderColor = [UIColor colorWithRed:0.4157 green:0.4745 blue:0.5373 alpha:1.0];
-        self.foregroundColor = [UIColor colorWithRed:0.9373 green:0.9333 blue:0.9333 alpha:1.0];
-        self.cursorColor = [UIColor colorWithRed:0.6157 green:0.6706 blue:0.7294 alpha:1.0];
-        self.textColor = self.cursorColor;
-        self.backgroundColor = [UIColor whiteColor];
-        
-        self.placeholderFontScale = 0.8;        
+        [self commonInit];
     }
     
     return self;
+}
+
+- (instancetype) initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void) commonInit {
+    self.foregroundView = [[UIView alloc] init];
+    self.placeholderLabel = [[UILabel alloc] init];
+    
+    self.placeholderColor = [UIColor colorWithRed:0.4157 green:0.4745 blue:0.5373 alpha:1.0];
+    self.foregroundColor = [UIColor colorWithRed:0.9373 green:0.9333 blue:0.9333 alpha:1.0];
+    self.cursorColor = [UIColor colorWithRed:0.6157 green:0.6706 blue:0.7294 alpha:1.0];
+    self.textColor = self.cursorColor;
+    self.backgroundColor = [UIColor whiteColor];
+    
+    self.placeholderFontScale = 0.8;
 }
 
 #pragma mark - Overridden methos
